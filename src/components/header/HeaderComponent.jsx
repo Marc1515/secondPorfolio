@@ -1,4 +1,4 @@
-import './styles/_styles.scss';
+import './headerStyles.scss';
 
 function HeaderComponent() {
 	return (
