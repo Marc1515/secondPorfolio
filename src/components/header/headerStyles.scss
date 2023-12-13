@@ -6,14 +6,25 @@
 
 .header {
 
-    @include modules.contentBox(auto, 1rem);
-    @include modules.typographyStyle(medium, 500);
-    background-color: var(--color-background);
-    color: var(--typography-color);
-
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    
+    
     .nav {
         width: 100%;
         @include layout.flexible(flex, row, nowrap, center, center);
+        @include modules.contentBox(auto, 1rem);
+        @include modules.typographyStyle(medium, 500);
+        background-color: var(--color-background);
+        color: var(--typography-color);
+        transition: transform 0.3s ease;
+        transform: translateX(0);
+
+        &.hidden {
+
+            transform: translateX(-100%)
+
+        }
 
         
         .nav__li {
