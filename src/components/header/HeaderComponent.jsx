@@ -14,20 +14,57 @@ function HeaderComponent() {
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
+	useEffect(() => {
+		const navLinks = document.querySelectorAll('.header__link');
+		const underline = document.querySelector('.header__underline');
+
+		const handleMouseEnter = (link) => {
+			underline.style.width = `${link.offsetWidth}px`;
+			underline.style.left = `${link.offsetLeft}px`;
+		};
+
+		const handleMouseLeave = () => {
+			underline.style.width = 0;
+		};
+
+		navLinks.forEach((link) => {
+			link.addEventListener('mouseenter', () => handleMouseEnter(link));
+			link.addEventListener('mouseleave', handleMouseLeave);
+		});
+
+		return () => {
+			navLinks.forEach((link) => {
+				link.removeEventListener('mouseenter', () => handleMouseEnter(link));
+				link.removeEventListener('mouseleave', handleMouseLeave);
+			});
+		};
+	}, []);
+
 	return (
 		<>
 			<header className='header'>
 				{windowWidth <= 480 && (
 					<BurguerButtonComponent toggleMenu={toggleMenu} />
 				)}
-				<nav className={`header__nav nav ${menuOpen ? '' : 'hidden'}`}>
-					<ul className='nav nav__ul'>
-						<li className='nav nav__li'>Marc</li>
-						<li className='nav nav__li'>About Me</li>
-						<li className='nav nav__li'>Technologies</li>
-						<li className='nav nav__li'>Projects</li>
-						<li className='nav nav__li'>Contact</li>
+				<nav className={`header__nav ${menuOpen ? '' : 'hidden'}`}>
+					<ul className='header__list'>
+						<li className='header__item'>
+							<a className='header__link'>Marc</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>About Me</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>Technologies</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>Projects</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>Contact</a>
+						</li>
 					</ul>
+					<div className='header__underline'></div> {/* Agregar esto */}
 				</nav>
 			</header>
 		</>
