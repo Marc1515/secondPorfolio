@@ -1,8 +1,14 @@
+
+    /* Screens */
+
+    $mobile-width: 480px;
+
+
 @mixin contentBox ($height) {
 
     height: $height;
 
-    @media (min-width: 480px) {
+    @media (min-width: $mobile-width) {
 
         height: 5rem;
 
@@ -15,7 +21,7 @@
     font-size: $size;
     font-weight: $weight;
 
-    @media (min-width: 480px) {
+    @media (min-width: $mobile-width) {
         font-size: medium;
         font-weight: 500;
     }
@@ -26,7 +32,7 @@
 
     transform: translateX($transalteX) ;
 
-    @media (min-width: 480px) {
+    @media (min-width: $mobile-width) {
         transform: translateX(0);
     }
 
@@ -37,7 +43,7 @@
     
     padding: $paddingX $paddingY;
 
-    @media (min-width: 480px) {
+    @media (min-width: $mobile-width) {
         
         padding: 12px 23px;
 
@@ -50,7 +56,7 @@
     left: $left;
     width: $width;
 
-    @media (min-width: 480px) {
+    @media (min-width: $mobile-width) {
         
         left: 10%;
         width: 80%;
