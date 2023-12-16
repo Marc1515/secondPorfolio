@@ -1,15 +1,10 @@
-@mixin flexible ($flex, $direction, $cut, $just, $align) {
+@mixin flexFlowHeader ($direction, $cut) {
 
-    display: $flex;
     flex-flow: $direction $cut;
-    justify-content: $just;
-    align-items: $align;
 
-    @media (max-width: 480px) {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
+    @media (min-width: 480px) {
+        flex-flow: row nowrap;
     }
 
 }
+

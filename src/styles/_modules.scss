@@ -1,14 +1,10 @@
 @mixin contentBox ($height) {
 
-    width: 100%;
     height: $height;
-    box-sizing: border-box;
 
-    @media (max-width: 480px) {
+    @media (min-width: 480px) {
 
-        width: 100%;
-        height: 100vh;
-        box-sizing: border-box;
+        height: 5rem;
 
     }
 
@@ -19,42 +15,31 @@
     font-size: $size;
     font-weight: $weight;
 
-    @media (max-width: 480px) {
-        font-size: larger;
-        font-weight: bold;
+    @media (min-width: 480px) {
+        font-size: medium;
+        font-weight: 500;
     }
     
 }
 
 @mixin hiddenNavbar ($transalteX) {
 
-    transform: $transalteX;
+    transform: translateX($transalteX) ;
 
-    @media (max-width: 480px) {
-        transform: translateX(-100%)
+    @media (min-width: 480px) {
+        transform: translateX(0);
     }
 
 }
 
-@mixin navbarContentBox ($paddingY) {
-
-    padding-top: $paddingY;
-    padding-bottom: $paddingY;
-
-    @media (max-width: 480px) {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-    }
-
-}
 
 @mixin linksUnderline ($paddingX, $paddingY) {
     
     padding: $paddingX $paddingY;
 
-    @media (max-width: 480px) {
+    @media (min-width: 480px) {
         
-        padding: 10px 20px;
+        padding: 12px 23px;
 
     }
 
@@ -64,11 +49,11 @@
 
     left: $left;
     width: $width;
-    
-    @media (max-width: 480px) {
+
+    @media (min-width: 480px) {
         
-        left: 20%;
-        width: 60%;
+        left: 10%;
+        width: 80%;
 
     }
     
