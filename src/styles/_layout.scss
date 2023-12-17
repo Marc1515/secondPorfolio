@@ -1,10 +1,19 @@
+
+/* Screens */
+
+$mobile-width: 480px;
+
+
+// Navbar Styles ------------------------------ //
+
 @mixin flexFlowHeader ($direction, $cut) {
 
     flex-flow: $direction $cut;
 
-    @media (min-width: 480px) {
+    @media (min-width: $mobile-width) {
         flex-flow: row nowrap;
     }
 
 }
 
+// Navbar Styles ------------------------------ //
