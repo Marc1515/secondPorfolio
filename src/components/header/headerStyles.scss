@@ -7,7 +7,7 @@
 .header {
 
     display: flex;
-    flex-flow: row-reverse nowrap;
+    flex-flow: row-reverse nowrap; // To control the burguer button position
     
     .header__nav {
         width: 100%;
@@ -16,7 +16,7 @@
         @include layout.flexFlowHeader(column, nowrap);
         justify-content: center;
         align-items: center;
-        @include modules.contentBox(100vh);
+        @include modules.navbarHeight(100vh);
         @include modules.typographyStyle(larger, bold);
         background-color: var(--color-background);
         color: var(--typography-color);

@@ -3,8 +3,9 @@
 
     $mobile-width: 480px;
 
+// Navbar Styles ------------------------------ //
 
-@mixin contentBox ($height) {
+@mixin navbarHeight ($height) {
 
     height: $height;
 
@@ -64,3 +65,7 @@
     }
     
 }
+
+// Navbar Styles ------------------------------ //
+
+
