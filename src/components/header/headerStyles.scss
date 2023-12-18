@@ -5,67 +5,65 @@
 
 
 .header {
+    width: 100%;
+    box-sizing: border-box;
 
-    display: flex;
-    flex-flow: row-reverse nowrap; // To control the burguer button position
-    
-    .header__nav {
-        width: 100%;
-        box-sizing: border-box;
+    .header__wrapper {
+
         display: flex;
-        @include layout.flexFlowHeader(column, nowrap);
-        justify-content: center;
-        align-items: center;
-        @include modules.navbarHeight(100vh);
-        @include modules.typographyStyle(larger, bold);
-        background-color: var(--color-background);
-        color: var(--typography-color);
-        transition: transform 0.3s ease;
-        transform: translateX(0);
+        flex-flow: row-reverse nowrap; // To control the burguer button position
+    
+        .header__nav {
+            @include layout.flexHeader(flex, column, nowrap, center, center);
+            @include modules.navbarHeight(100vh);
+            @include modules.typographyStyle(larger, bold);
+            background-color: var(--color-background);
+            color: var(--typography-color);
+            transition: transform 0.3s ease;
+            transform: translateX(0);
 
-        &.hidden {
+            &.hidden {
 
-            @include modules.hiddenNavbar(-100%)
+                @include modules.hiddenNavbar(-100%)
 
-        }
+            }
 
-        .header__list {
-            width: 100%;
-            display: flex;
-            @include layout.flexFlowHeader(column, nowrap);
-            justify-content: center;
-            align-items: center;
+            .header__list {
+                
+                @include layout.flexHeader(flex, column, nowrap, center, center);
 
-            .header__item {
-                width: 100%;
+                .header__item {
 
-                .header__link {
-                    position: relative;
-                    text-align: center;
-                    @include modules.linksUnderline(10px, 20px);
-                    transition: ease-in-out .5s;
-                    cursor: pointer;
 
-                    span {
-                        position: absolute;
-                        top: 0;
-                        @include modules.underlineSeparation(25%, 50%);
-                        height: 100%;
-                        z-index: -1;
-                        border-bottom: solid 2px var(--color-accent);
-                        transform: scale(0) translateY(50px);
-                        border-radius: 15px;
-                        opacity: 0;
+                    .header__link {
+                        position: relative;
+                        text-align: center;
+                        @include modules.linksUnderline(10px, 20px);
                         transition: ease-in-out .5s;
-                    }
-
-                    &:hover {
-
-                        color: var(--color-accent);
+                        cursor: pointer;
 
                         span {
-                            transform: scale(1) translateY(0);
-                            opacity: 1;
+                            position: absolute;
+                            top: 0;
+                            @include modules.underlineSeparation(25%, 50%);
+                            height: 100%;
+                            z-index: -1;
+                            border-bottom: solid 2px var(--color-accent);
+                            transform: scale(0) translateY(50px);
+                            border-radius: 15px;
+                            opacity: 0;
+                            transition: ease-in-out .5s;
+                        }
+
+                        &:hover {
+
+                            color: var(--color-accent);
+
+                            span {
+                                transform: scale(1) translateY(0);
+                                opacity: 1;
+                            }
+
                         }
 
                     }
