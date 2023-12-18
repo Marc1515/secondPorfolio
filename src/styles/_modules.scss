@@ -1,7 +1,7 @@
 
     /* Screens */
 
-    $mobile-width: 480px;
+    $bigger-screen: 480px;
 
 // Navbar Styles ------------------------------ //
 
@@ -9,7 +9,7 @@
 
     height: $height;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $bigger-screen) {
 
         height: 5rem;
 
@@ -22,7 +22,7 @@
     font-size: $size;
     font-weight: $weight;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $bigger-screen) {
         font-size: medium;
         font-weight: 500;
     }
@@ -33,7 +33,7 @@
 
     transform: translateX($transalteX) ;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $bigger-screen) {
         transform: translateX(0);
     }
 
@@ -44,7 +44,7 @@
     
     padding: $paddingX $paddingY;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $bigger-screen) {
         
         padding: 12px 23px;
 
@@ -57,7 +57,7 @@
     left: $left;
     width: $width;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $bigger-screen) {
         
         left: 10%;
         width: 80%;
