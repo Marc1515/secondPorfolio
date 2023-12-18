@@ -1,17 +1,22 @@
 
 /* Screens */
 
-$mobile-width: 480px;
+$bigger-screen: 480px;
 
 
 // Navbar Styles ------------------------------ //
 
-@mixin flexFlowHeader ($direction, $cut) {
+@mixin flexHeader ($flex, $direction, $cut, $justify, $align) {
 
+    display: $flex;
     flex-flow: $direction $cut;
+    justify-content: $justify;
+    align-items: $align;
 
-    @media (min-width: $mobile-width) {
+    @media (min-width: $bigger-screen) {
+
         flex-flow: row nowrap;
+
     }
 
 }
