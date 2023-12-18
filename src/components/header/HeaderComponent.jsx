@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from 'react';
 import { MenuContext } from './../../context/MenuContext';
 import BurguerButtonComponent from './burguerButton/BurguerButtonComponent';
-import './headerStyles.scss';
+import './HeaderComponent.scss';
 
 function HeaderComponent() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
