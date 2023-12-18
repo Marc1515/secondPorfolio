@@ -21,7 +21,11 @@ function HeaderComponent() {
 					{windowWidth <= 480 && (
 						<BurguerButtonComponent toggleMenu={toggleMenu} />
 					)}
-					<nav className={`header header__nav ${menuOpen ? '' : 'hidden'}`}>
+					<nav
+						className={`header header__nav ${
+							menuOpen ? '' : 'header__nav--hidden'
+						}`}
+					>
 						<ul className='header header__list'>
 							<li className='header header__item'>
 								<a className='header header__link'>

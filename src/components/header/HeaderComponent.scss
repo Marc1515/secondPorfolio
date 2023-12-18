@@ -22,7 +22,7 @@
             transition: transform 0.3s ease;
             transform: translateX(0);
 
-            &.hidden {
+            &.header__nav--hidden {
 
                 @include modules.hiddenNavbar(-100%)
 
