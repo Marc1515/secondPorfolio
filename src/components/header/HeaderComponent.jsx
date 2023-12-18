@@ -17,38 +17,40 @@ function HeaderComponent() {
 	return (
 		<>
 			<header className='header'>
-				{windowWidth <= 480 && (
-					<BurguerButtonComponent toggleMenu={toggleMenu} />
-				)}
-				<nav className={`header__nav ${menuOpen ? '' : 'hidden'}`}>
-					<ul className='header__list'>
-						<li className='header__item'>
-							<a className='header__link'>
-								Marc<span></span>
-							</a>
-						</li>
-						<li className='header__item'>
-							<a className='header__link'>
-								About Me<span></span>
-							</a>
-						</li>
-						<li className='header__item'>
-							<a className='header__link'>
-								Technologies<span></span>
-							</a>
-						</li>
-						<li className='header__item'>
-							<a className='header__link'>
-								Projects<span></span>
-							</a>
-						</li>
-						<li className='header__item'>
-							<a className='header__link'>
-								Contact<span></span>
-							</a>
-						</li>
-					</ul>
-				</nav>
+				<div className='header header__wrapper'>
+					{windowWidth <= 480 && (
+						<BurguerButtonComponent toggleMenu={toggleMenu} />
+					)}
+					<nav className={`header header__nav ${menuOpen ? '' : 'hidden'}`}>
+						<ul className='header header__list'>
+							<li className='header header__item'>
+								<a className='header header__link'>
+									Marc<span></span>
+								</a>
+							</li>
+							<li className='header header__item'>
+								<a className='header header__link'>
+									About Me<span></span>
+								</a>
+							</li>
+							<li className='header header__item'>
+								<a className='header header__link'>
+									Technologies<span></span>
+								</a>
+							</li>
+							<li className='header header__item'>
+								<a className='header header__link'>
+									Projects<span></span>
+								</a>
+							</li>
+							<li className='header header__item'>
+								<a className='header header__link'>
+									Contact<span></span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 		</>
 	);
