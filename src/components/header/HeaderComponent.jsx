@@ -29,27 +29,27 @@ function HeaderComponent() {
 						<ul className='header header__list'>
 							<li className='header header__item'>
 								<a className='header header__link'>
-									Marc<span></span>
+									Marc<span className='header__underline'></span>
 								</a>
 							</li>
 							<li className='header header__item'>
 								<a className='header header__link'>
-									About Me<span></span>
+									About Me<span className='header__underline'></span>
 								</a>
 							</li>
 							<li className='header header__item'>
 								<a className='header header__link'>
-									Technologies<span></span>
+									Technologies<span className='header__underline'></span>
 								</a>
 							</li>
 							<li className='header header__item'>
 								<a className='header header__link'>
-									Projects<span></span>
+									Projects<span className='header__underline'></span>
 								</a>
 							</li>
 							<li className='header header__item'>
 								<a className='header header__link'>
-									Contact<span></span>
+									Contact<span className='header__underline'></span>
 								</a>
 							</li>
 						</ul>
