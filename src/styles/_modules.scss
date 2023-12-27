@@ -1,71 +1,51 @@
-
 // Screens ------------------------------------ //
 
-    $bigger-screen: 480px;
+$bigger-screen: 480px;
 
 // Navbar Styles ------------------------------ //
 
-@mixin navbarHeight ($height) {
+@mixin navbarHeight($height) {
+	height: $height;
 
-    height: $height;
-
-    @media (min-width: $bigger-screen) {
-
-        height: 5rem;
-
-    }
-
+	@media (min-width: $bigger-screen) {
+		height: 5rem;
+	}
 }
 
-@mixin typographyStyle ($size, $weight) {
+@mixin typographyStyle($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
 
-    font-size: $size;
-    font-weight: $weight;
-
-    @media (min-width: $bigger-screen) {
-        font-size: medium;
-        font-weight: 500;
-    }
-    
+	@media (min-width: $bigger-screen) {
+		font-size: medium;
+		font-weight: 500;
+	}
 }
 
-@mixin hiddenNavbar ($transalteX) {
+@mixin hiddenNavbar($transalteX) {
+	transform: translateX($transalteX);
 
-    transform: translateX($transalteX) ;
-
-    @media (min-width: $bigger-screen) {
-        transform: translateX(0);
-    }
-
+	@media (min-width: $bigger-screen) {
+		transform: translateX(0);
+	}
 }
 
+@mixin linksUnderline($paddingX, $paddingY) {
+	padding: $paddingX $paddingY;
 
-@mixin linksUnderline ($paddingX, $paddingY) {
-    
-    padding: $paddingX $paddingY;
-
-    @media (min-width: $bigger-screen) {
-        
-        padding: 12px 23px;
-
-    }
-
+	@media (min-width: $bigger-screen) {
+		padding: 12px 23px;
+	}
 }
 
-@mixin underlineSeparation ($left, $width) {
+@mixin underlineSeparation($left, $width) {
+	left: $left;
+	width: $width;
 
-    left: $left;
-    width: $width;
-
-    @media (min-width: $bigger-screen) {
-        
-        left: 10%;
-        width: 80%;
-
-    }
-    
+	@media (min-width: $bigger-screen) {
+		left: 10%;
+		width: 80%;
+	}
 }
 
 // Navbar Styles ------------------------------ //
-
-
