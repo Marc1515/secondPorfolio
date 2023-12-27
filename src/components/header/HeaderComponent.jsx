@@ -16,45 +16,41 @@ function HeaderComponent() {
 
 	return (
 		<>
-			<header className='header'>
-				<div className='header header__wrapper'>
-					{windowWidth <= 480 && (
-						<BurguerButtonComponent toggleMenu={toggleMenu} />
-					)}
-					<nav
-						className={`header header__nav ${
-							menuOpen ? '' : 'header__nav--hidden'
-						}`}
-					>
-						<ul className='header header__list'>
-							<li className='header header__item'>
-								<a className='header header__link'>
-									Marc<span className='header__underline'></span>
-								</a>
-							</li>
-							<li className='header header__item'>
-								<a className='header header__link'>
-									About Me<span className='header__underline'></span>
-								</a>
-							</li>
-							<li className='header header__item'>
-								<a className='header header__link'>
-									Technologies<span className='header__underline'></span>
-								</a>
-							</li>
-							<li className='header header__item'>
-								<a className='header header__link'>
-									Projects<span className='header__underline'></span>
-								</a>
-							</li>
-							<li className='header header__item'>
-								<a className='header header__link'>
-									Contact<span className='header__underline'></span>
-								</a>
-							</li>
-						</ul>
-					</nav>
+			{windowWidth <= 480 && (
+				<div className='burguerButton'>
+					<BurguerButtonComponent toggleMenu={toggleMenu} />
 				</div>
+			)}
+			<header className={`header ${menuOpen ? '' : 'header--hidden'}`}>
+				<nav className='header__nav'>
+					<ul className='header__list'>
+						<li className='header__item'>
+							<a className='header__link'>
+								Marc<span className='header__underline'></span>
+							</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>
+								About Me<span className='header__underline'></span>
+							</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>
+								Technologies<span className='header__underline'></span>
+							</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>
+								Projects<span className='header__underline'></span>
+							</a>
+						</li>
+						<li className='header__item'>
+							<a className='header__link'>
+								Contact<span className='header__underline'></span>
+							</a>
+						</li>
+					</ul>
+				</nav>
 			</header>
 		</>
 	);
