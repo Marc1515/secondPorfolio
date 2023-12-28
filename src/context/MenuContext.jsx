@@ -4,14 +4,16 @@ import { createContext, useState } from 'react';
 export const MenuContext = createContext();
 
 export const MenuProvider = ({ children }) => {
-	const [menuOpen, setMenuOpen] = useState(false);
+	const [navbarOpen, setNavbarOpen] = useState(false);
+	const [burguerButtonOpen, setBurguerButtonOpen] = useState(true);
 
 	const toggleMenu = () => {
-		setMenuOpen(!menuOpen);
+		setNavbarOpen(!navbarOpen);
+		setBurguerButtonOpen(!burguerButtonOpen);
 	};
 
 	return (
-		<MenuContext.Provider value={{ menuOpen, setMenuOpen, toggleMenu }}>
+		<MenuContext.Provider value={{ toggleMenu, navbarOpen, burguerButtonOpen }}>
 			{children}
 		</MenuContext.Provider>
 	);

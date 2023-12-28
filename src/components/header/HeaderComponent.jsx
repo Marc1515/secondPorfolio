@@ -6,7 +6,7 @@ import './HeaderComponent.scss';
 
 function HeaderComponent() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-	const { menuOpen, setMenuOpen, toggleMenu } = useContext(MenuContext);
+	const { toggleMenu, navbarOpen } = useContext(MenuContext);
 
 	useEffect(() => {
 		const handleResize = () => setWindowWidth(window.innerWidth);
@@ -18,7 +18,7 @@ function HeaderComponent() {
 	const handleClick = (e) => {
 		const widthScreen = window.screen.width;
 		if (widthScreen <= 800) {
-			setMenuOpen(!menuOpen);
+			toggleMenu();
 		}
 	};
 
@@ -29,7 +29,7 @@ function HeaderComponent() {
 					<BurguerButtonComponent toggleMenu={toggleMenu} />
 				</div>
 			)}
-			<header className={`header ${menuOpen ? '' : 'header--hidden'}`}>
+			<header className={`header ${navbarOpen ? '' : 'header--hidden'}`}>
 				<nav className='header__nav'>
 					<ul className='header__list'>
 						<li className='header__item'>
