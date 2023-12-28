@@ -1,10 +1,193 @@
+import { useState } from 'react';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import TechImages from './TechnologiesData';
 import './TechnologiesComponent.scss';
 
 const TechnologiesComponent = () => {
+	const [openSection, setOpenSection] = useState(null);
+
+	const toggleSection = (section) => {
+		setOpenSection((current) => (current === section ? null : section));
+	};
+
 	return (
 		<>
 			<section id='technologies'>
-				<h1>Technologies</h1>
+				<div className='technologiesTittleContainer'>
+					<span className='technologiesTittleContainer__Tittle'>
+						Technologies
+					</span>
+				</div>
+				{/* Basic Technologies */}
+				<div className='TechCard'>
+					<span className='TechCard__Tittle'>Basic</span>
+					<div className='TechCard__WrapperImgs'>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.htmlSVG}
+							alt='html_img'
+						/>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.cssSVG}
+							alt='css_img'
+						/>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.javaScriptSvg}
+							alt='javaScript_img'
+						/>
+					</div>
+					<div
+						className={`TechCard__DropDown ${
+							openSection === 'BT' ? 'open' : ''
+						}`}
+						onClick={() => toggleSection('BT')}
+					>
+						<div className='TechCard__DropDownTittle'>
+							<span className='summary'>HTML, CSS y JavaScript</span>
+							<span className='TechCard__ArrowIcon'>
+								{openSection === 'BT' ? <FiChevronUp /> : <FiChevronDown />}
+							</span>
+						</div>
+						<div className='TechCard__Text'>
+							{TechImages.techDescriptions.htmlCssJs}
+						</div>
+					</div>
+				</div>
+				{/* Basic Technologies */}
+				{/* CSS Libraries */}
+				<div className='TechCard'>
+					<span className='TechCard__Tittle'>CSS Libraries</span>
+					<div className='TechCard__WrapperImgs'>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.bootstrapSVG}
+							alt='bootstrap_img'
+						/>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.tailwindSvg}
+							alt='tailwind_img'
+						/>
+					</div>
+					<div
+						className={`TechCard__DropDown ${
+							openSection === 'CSST' ? 'open' : ''
+						}`}
+						onClick={() => toggleSection('CSST')}
+					>
+						<div className='TechCard__DropDownTittle'>
+							<span className='summary'>Bootstrap & Taildwind</span>
+							<span className='TechCard__ArrowIcon'>
+								{openSection === 'CSST' ? <FiChevronUp /> : <FiChevronDown />}
+							</span>
+						</div>
+						<div className='TechCard__Text'>
+							{TechImages.techDescriptions.htmlCssJs}
+						</div>
+					</div>
+				</div>
+				{/* CSS Libraries */}
+				{/* SuperSet and Pre-Processor */}
+				<div className='TechCard'>
+					<span className='TechCard__Tittle'>Pre-Processors</span>
+					<div className='TechCard__WrapperImgs'>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.typeScriptSvg}
+							alt='typeScript_img'
+						/>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.sassSVG}
+							alt='tailwind_img'
+						/>
+					</div>
+					<div
+						className={`TechCard__DropDown ${
+							openSection === 'TPT' ? 'open' : ''
+						}`}
+						onClick={() => toggleSection('TPT')}
+					>
+						<div className='TechCard__DropDownTittle'>
+							<span className='summary'>TypeScript & SASS</span>
+							<span className='TechCard__ArrowIcon'>
+								{openSection === 'TPT' ? <FiChevronUp /> : <FiChevronDown />}
+							</span>
+						</div>
+						<div className='TechCard__Text'>
+							{TechImages.techDescriptions.htmlCssJs}
+						</div>
+					</div>
+				</div>
+				{/* SuperSet and Pre-Processor */}
+				{/* Frameworks */}
+				<div className='TechCard'>
+					<span className='TechCard__Tittle'>Frameworks</span>
+					<div className='TechCard__WrapperImgs'>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.reactSVG}
+							alt='react_img'
+						/>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.angularSVG}
+							alt='angular_img'
+						/>
+					</div>
+					<div
+						className={`TechCard__DropDown ${
+							openSection === 'FT' ? 'open' : ''
+						}`}
+						onClick={() => toggleSection('FT')}
+					>
+						<div className='TechCard__DropDownTittle'>
+							<span className='summary'>React & Angular</span>
+							<span className='TechCard__ArrowIcon'>
+								{openSection === 'FT' ? <FiChevronUp /> : <FiChevronDown />}
+							</span>
+						</div>
+						<div className='TechCard__Text'>
+							{TechImages.techDescriptions.htmlCssJs}
+						</div>
+					</div>
+				</div>
+				{/* Frameworks */}
+				{/* CMS */}
+				<div className='TechCard'>
+					<span className='TechCard__Tittle'>CMS</span>
+					<div className='TechCard__WrapperImgs'>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.wordpressSVG}
+							alt='wordpress_img'
+						/>
+						<img
+							className='TechCard__Img'
+							src={TechImages.techBuild.wooCommerceSVG}
+							alt='wooCommerce_img'
+						/>
+					</div>
+					<div
+						className={`TechCard__DropDown ${
+							openSection === 'CT' ? 'open' : ''
+						}`}
+						onClick={() => toggleSection('CT')}
+					>
+						<div className='TechCard__DropDownTittle'>
+							<span className='summary'>Wordpress & WooCommerce</span>
+							<span className='TechCard__ArrowIcon'>
+								{openSection === 'CT' ? <FiChevronUp /> : <FiChevronDown />}
+							</span>
+						</div>
+						<div className='TechCard__Text'>
+							{TechImages.techDescriptions.htmlCssJs}
+						</div>
+					</div>
+				</div>
+				{/* CMS */}
 			</section>
 		</>
 	);

@@ -1,0 +1,77 @@
+section {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	min-height: 100vh;
+	height: 100%;
+	padding: 1rem;
+
+	.technologiesTittleContainer {
+		display: flex;
+		align-items: center;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		padding-left: 1rem;
+		height: 20%;
+		font-size: 2.5rem;
+	}
+
+	.TechCard {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		width: 100%;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		border-radius: 50px;
+		background: #393939;
+		box-shadow:
+			20px 20px 60px #bebebe,
+			-20px -20px 60px #ffffff;
+
+		.TechCard__Tittle {
+			font-size: 1.8rem;
+			padding-bottom: 2rem;
+		}
+
+		.TechCard__WrapperImgs {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			padding-bottom: 2rem;
+
+			.TechCard__Img {
+				width: 5rem;
+			}
+		}
+
+		.TechCard__DropDownTittle {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+
+			&:first-child {
+				font-size: 1.3rem;
+			}
+		}
+
+		.TechCard__Text {
+			position: relative;
+			max-height: 0;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			visibility: hidden;
+			overflow: hidden;
+			transition:
+				max-height 0.3s ease-in-out,
+				visibility 0.3s ease-in-out;
+		}
+
+		.TechCard__DropDown.open .TechCard__Text {
+			max-height: 500px;
+			visibility: visible;
+		}
+	}
+}
