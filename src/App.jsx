@@ -1,5 +1,5 @@
 import { MenuProvider } from './context/MenuContext';
-import HeaderComponent from './components/Header/HeaderComponent';
+import HeaderComponent from './components/header/HeaderComponent';
 import MarcComponent from './components/Marc/MarcComponent';
 import AboutComponent from './components/about/aboutComponent';
 import TechnologiesComponent from './components/Technologies/TechnologiesComponent';
