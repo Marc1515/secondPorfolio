@@ -21,7 +21,7 @@ const MarcComponent = () => {
 
 	return (
 		<>
-			<section>
+			<section id='marc'>
 				<div className='imgContainer'>
 					{<img src={fotoPerfil} alt='' className='imgContainer__Img' />}
 				</div>

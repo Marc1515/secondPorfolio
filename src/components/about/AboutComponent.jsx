@@ -9,7 +9,7 @@ import './AboutComponent.scss';
 const AboutComponent = () => {
 	return (
 		<>
-			<section>
+			<section id='about'>
 				<div className='aboutTittleContainer'>
 					<span className='aboutTittleContainer__Tittle'>About Me</span>
 				</div>

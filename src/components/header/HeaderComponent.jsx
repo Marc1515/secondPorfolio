@@ -1,11 +1,12 @@
 import { useEffect, useState, useContext } from 'react';
-import { MenuContext } from './../../context/MenuContext';
-import BurguerButtonComponent from './burguerButton/BurguerButtonComponent';
+import { MenuContext } from '../../context/MenuContext';
+import { Link } from 'react-scroll';
+import BurguerButtonComponent from './BurguerButton/BurguerButtonComponent';
 import './HeaderComponent.scss';
 
 function HeaderComponent() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-	const { menuOpen, toggleMenu } = useContext(MenuContext);
+	const { menuOpen, setMenuOpen, toggleMenu } = useContext(MenuContext);
 
 	useEffect(() => {
 		const handleResize = () => setWindowWidth(window.innerWidth);
@@ -13,6 +14,13 @@ function HeaderComponent() {
 
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
+
+	const handleClick = (e) => {
+		const widthScreen = window.screen.width;
+		if (widthScreen <= 800) {
+			setMenuOpen(!menuOpen);
+		}
+	};
 
 	return (
 		<>
@@ -25,29 +33,64 @@ function HeaderComponent() {
 				<nav className='header__nav'>
 					<ul className='header__list'>
 						<li className='header__item'>
-							<a className='header__link'>
+							<Link
+								onClick={handleClick}
+								to='marc'
+								spy={true}
+								smooth={true}
+								duration={500}
+								className='header__link'
+							>
 								Marc<span className='header__underline'></span>
-							</a>
+							</Link>
 						</li>
 						<li className='header__item'>
-							<a className='header__link'>
+							<Link
+								onClick={handleClick}
+								to='about'
+								spy={true}
+								smooth={true}
+								duration={500}
+								className='header__link'
+							>
 								About Me<span className='header__underline'></span>
-							</a>
+							</Link>
 						</li>
 						<li className='header__item'>
-							<a className='header__link'>
+							<Link
+								onClick={handleClick}
+								to='technologies'
+								spy={true}
+								smooth={true}
+								duration={500}
+								className='header__link'
+							>
 								Technologies<span className='header__underline'></span>
-							</a>
+							</Link>
 						</li>
 						<li className='header__item'>
-							<a className='header__link'>
+							<Link
+								onClick={handleClick}
+								to='projects'
+								spy={true}
+								smooth={true}
+								duration={500}
+								className='header__link'
+							>
 								Projects<span className='header__underline'></span>
-							</a>
+							</Link>
 						</li>
 						<li className='header__item'>
-							<a className='header__link'>
+							<Link
+								onClick={handleClick}
+								to='contact'
+								spy={true}
+								smooth={true}
+								duration={500}
+								className='header__link'
+							>
 								Contact<span className='header__underline'></span>
-							</a>
+							</Link>
 						</li>
 					</ul>
 				</nav>
