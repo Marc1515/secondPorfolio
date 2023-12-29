@@ -86,7 +86,7 @@ const ProjectsComponent = () => {
 					))}
 				</div>
 			</div>
-			<div className='container-pagination'>
+			<div className='projectsCards_Pagination'>
 				<Stack spacing={2}>
 					<Pagination
 						count={Math.ceil(images.length / imagesPerPage)}
