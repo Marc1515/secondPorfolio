@@ -1,91 +1,80 @@
-section {
-	position: relative;
+.projectsTittle {
+	display: flex;
+	flex-flow: column;
+	align-items: start;
+
+	.projectsTittle__Tittle {
+		padding-top: 5rem;
+		padding-left: 1rem;
+		height: 20%;
+		font-size: 2.5rem;
+	}
+
+	.projectsTittle__Text {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		padding-left: 1rem;
+		height: 20%;
+		font-size: 1.5rem;
+	}
+}
+
+.projectsCards__Card {
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-around;
-	box-sizing: border-box;
-	min-height: 100vh;
-	height: 100%;
-	padding: 1rem;
+	justify-content: space-between;
+	min-height: 35rem;
+	max-height: 40rem;
+	width: 100%;
+	padding: 2rem;
+	margin-bottom: 3rem;
+	border-radius: 50px;
+	background: #393939;
+	box-shadow:
+		20px 20px 60px #bebebe,
+		-20px -20px 60px #ffffff;
 
-	.projectsTittle {
-		display: flex;
-		flex-flow: column;
-		align-items: start;
-
-		.projectsTittle__Tittle {
-			padding-top: 5rem;
-			padding-left: 1rem;
-			height: 20%;
-			font-size: 2.5rem;
-		}
-
-		.projectsTittle__Text {
-			padding-top: 5rem;
-			padding-bottom: 5rem;
-			padding-left: 1rem;
-			height: 20%;
-			font-size: 1.5rem;
+	a {
+		width: 100%;
+		img {
+			height: 15rem;
 		}
 	}
 
-	.projectsCards__Card {
+	.projectsCards__Links {
 		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-between;
-		min-height: 35rem;
-		max-height: 40rem;
-		width: 100%;
-		padding: 2rem;
-		margin-bottom: 3rem;
-		border-radius: 50px;
-		background: #393939;
-		box-shadow:
-			20px 20px 60px #bebebe,
-			-20px -20px 60px #ffffff;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
 
 		a {
 			width: 100%;
-			img {
-				height: 15rem;
-			}
-		}
-
-		.projectsCards__Links {
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: center;
-			align-items: center;
-
-			a {
-				width: 100%;
-				font-size: 3rem;
-			}
-		}
-		.projectsCards__Name {
-			font-size: 1.4rem;
-			text-align: center;
-		}
-
-		.projectsCards__TechImg {
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-around;
-			align-items: center;
-			width: 100%;
-
-			img {
-				width: 3rem;
-			}
+			font-size: 3rem;
 		}
 	}
+	.projectsCards__Name {
+		font-size: 1.4rem;
+		text-align: center;
+	}
 
-	.projectsCards_Pagination {
+	.projectsCards__TechImg {
 		display: flex;
-		justify-content: center;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
 
-		/* .css-19micn4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+		img {
+			width: 3rem;
+		}
+	}
+}
+
+.projectsCards_Pagination {
+	display: flex;
+	justify-content: center;
+
+	/* .css-19micn4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
 			background-color: yellow;
 		} */
-	}
 }

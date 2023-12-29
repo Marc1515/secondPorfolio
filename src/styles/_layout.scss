@@ -1,24 +1,29 @@
-
 /* Screens */
 
 $bigger-screen: 480px;
 
-
 // Navbar Styles ------------------------------ //
 
-@mixin flexHeader ($flex, $direction, $cut, $justify, $align) {
+section {
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	min-height: 100vh;
+	height: 100%;
+	padding: 1rem;
+}
 
-    display: $flex;
-    flex-flow: $direction $cut;
-    justify-content: $justify;
-    align-items: $align;
+@mixin flexHeader($flex, $direction, $cut, $justify, $align) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+	align-items: $align;
 
-    @media (min-width: $bigger-screen) {
-
-        flex-flow: row nowrap;
-
-    }
-
+	@media (min-width: $bigger-screen) {
+		flex-flow: row nowrap;
+	}
 }
 
 // Navbar Styles ------------------------------ //
