@@ -1,0 +1,9 @@
+// FlexBox ------------------------------------ //
+
+@mixin flexbox($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+}
+
+// FlexBox ------------------------------------ //
