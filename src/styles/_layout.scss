@@ -1,19 +1,19 @@
+@use './mixins' as mixin;
+
 /* Screens */
 
 $bigger-screen: 480px;
 
-// Navbar Styles ------------------------------ //
-
 section {
 	position: relative;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
+	@include mixin.flexbox(flex, column, nowrap, space-around);
 	box-sizing: border-box;
 	min-height: 100vh;
 	height: 100%;
 	padding: 1rem;
 }
+
+// Navbar Styles ------------------------------ //
 
 @mixin flexHeader($flex, $direction, $cut, $justify, $align) {
 	display: $flex;
