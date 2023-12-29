@@ -59,7 +59,7 @@ section {
 			align-items: center;
 			padding-left: 1rem;
 
-			.buttonContainer__Button {
+			&__Button {
 				width: 100%;
 				height: 3rem;
 				z-index: 2;
