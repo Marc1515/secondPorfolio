@@ -6,11 +6,14 @@ $bigger-screen: 480px;
 
 section {
 	position: relative;
-	@include mixin.flexbox(flex, column, nowrap, space-around);
+	@include mixin.flexbox(flex, column, nowrap, space-between);
 	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	padding: 1.5rem;
 	min-height: 100vh;
 	height: 100%;
-	padding: 1rem;
+	width: 100%;
 }
 
 // Navbar Styles ------------------------------ //

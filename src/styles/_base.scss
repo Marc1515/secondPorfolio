@@ -84,6 +84,7 @@ li {
 /* (Opcional) Configuramos anclas suaves */
 html {
 	scroll-behavior: smooth;
+	top: 0;
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
@@ -158,11 +159,13 @@ svg {
 /* Configuramos la tipografía para toda la web */
 body {
 	height: 100%;
+	width: 100%;
 	min-height: 100vh;
 	font-size: 100%;
 	font-family: var(--tipo-principal);
 	color: var(--negro);
-	background-color: #3498db;
+	background-color: #202731;
+	overflow-x: hidden;
 	/* (Opcional) */
 	hyphens: auto;
 	/* (Opcional) */
@@ -171,62 +174,4 @@ body {
 	-webkit-font-smoothing: antialiased;
 	/* (Opcional) */
 	-moz-osx-font-smoothing: grayscale;
-}
-
-body {
-	background-color: #1a1a1a; /* Color de fondo oscuro */
-	background-image: linear-gradient(
-			45deg,
-			rgba(255, 255, 255, 0.1) 25%,
-			transparent 25%,
-			transparent 75%,
-			rgba(255, 255, 255, 0.1) 75%,
-			rgba(255, 255, 255, 0.1)
-		),
-		linear-gradient(
-			45deg,
-			rgba(255, 255, 255, 0.1) 25%,
-			transparent 25%,
-			transparent 75%,
-			rgba(255, 255, 255, 0.1) 75%,
-			rgba(255, 255, 255, 0.1)
-		);
-	background-size: 20px 20px;
-	background-position:
-		0 0,
-		10px 10px;
-}
-
-body {
-	background-color: #00111c; /* Este es el color de fondo más oscuro de la paleta */
-	background-image: linear-gradient(
-			45deg,
-			#001523 25%,
-			transparent 25%,
-			transparent 75%,
-			#001523 75%,
-			#001523
-		),
-		linear-gradient(
-			45deg,
-			#001a2c 25%,
-			transparent 25%,
-			transparent 75%,
-			#001a2c 75%,
-			#001a2c
-		),
-		linear-gradient(
-			135deg,
-			#002137 25%,
-			transparent 25%,
-			transparent 75%,
-			#002137 75%,
-			#002137
-		);
-	background-position:
-		0 0,
-		10px 10px,
-		0 0,
-		10px 10px;
-	background-size: 20px 20px;
 }

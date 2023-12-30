@@ -1,36 +1,30 @@
-.imgContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.marcSection {
+	background: #3c31dd;
+	min-height: 900px;
 	width: 100%;
-	padding: 2rem;
-	background: rgba(255, 255, 255, 0.1);
-	border-radius: 50px;
-	backdrop-filter: blur(4px);
-}
-.contentWrapper {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-around;
-	height: 100%;
+	padding-bottom: 10rem;
+
+	.imgContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 2rem;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50px;
+		backdrop-filter: blur(4px);
+	}
+
 	.titleContainer {
 		display: flex;
 		align-items: center;
-		padding-left: 1rem;
-		padding-bottom: 3rem;
 		height: 20%;
 		font-size: 2.5rem;
-		.titleContainer__Name {
-			padding-right: 1rem;
-		}
 	}
 
 	.autoTypedContainer {
 		display: flex;
 		align-items: center;
-		padding-left: 1rem;
-		padding-bottom: 3rem;
-		padding-right: 3rem;
 		gap: 0.5rem;
 		height: 20%;
 		width: 100%;
@@ -43,8 +37,6 @@
 	.buttonContainer {
 		display: flex;
 		align-items: center;
-		padding-left: 1rem;
-
 		&__Button {
 			width: 100%;
 			height: 3rem;
