@@ -2,13 +2,14 @@
 	background: #144272;
 	min-height: 900px;
 	width: 100%;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
 
 	.aboutTittleContainer {
 		display: flex;
 		align-items: center;
 		height: 20%;
 		font-size: 2.5rem;
-		padding-top: 5rem;
 	}
 
 	.textContainer {
@@ -19,7 +20,7 @@
 		height: 100%;
 
 		.textContainer__Text1 {
-			font-size: 1.2rem;
+			font-size: 1.4rem;
 			padding-bottom: 5rem;
 		}
 		.textContainer__Text2 {
@@ -31,10 +32,9 @@
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
-		padding-bottom: 2rem;
 
 		.socialMediaIconsContainer__icon {
-			font-size: 1.6rem;
+			font-size: 1.8rem;
 		}
 	}
 }
