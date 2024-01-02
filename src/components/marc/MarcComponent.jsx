@@ -7,7 +7,7 @@ import './MarcComponent.scss';
 const MarcComponent = () => {
 	useEffect(() => {
 		const options = {
-			strings: ['WELL TO MY PORTFOLIO AS A WEB DEVELOPER'],
+			strings: ['WELLCOME TO MY PORTFOLIO AS A WEB DEVELOPER'],
 			typeSpeed: 40,
 			backSpeed: 10,
 			loop: true,
