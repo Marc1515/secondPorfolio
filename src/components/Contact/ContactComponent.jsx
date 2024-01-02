@@ -10,6 +10,9 @@ const ContactComponent = () => {
 			<section id='contact' className='contactSection'>
 				<div className='contactTitle'>
 					<span className='contactTitle__Title'>Contact</span>
+					<span className='contactTitle__Text'>
+						You can contact me directly through any of these links.
+					</span>
 				</div>
 				<div className='contactCards'>
 					<div className='contactCards__Card'>

@@ -5,10 +5,18 @@
 	padding-top: 10rem;
 	.contactTitle {
 		display: flex;
-		align-items: center;
-		height: 20%;
-		font-size: 2.5rem;
-		padding-bottom: 5rem;
+		flex-flow: column nowrap;
+
+		.contactTitle__Title {
+			font-size: 2.5rem;
+		}
+
+		.contactTitle__Text {
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+			height: 20%;
+			font-size: 1.5rem;
+		}
 	}
 
 	.contactCards {
