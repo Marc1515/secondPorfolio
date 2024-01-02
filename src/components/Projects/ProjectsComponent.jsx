@@ -27,14 +27,14 @@ const ProjectsComponent = () => {
 		<>
 			<div className='spacer layer3'></div>
 			<section id='projects' className='projectsSection'>
-				<div className='projectsTittle'>
+				<div className='projectsTittle' ref={cardsWrapperRef}>
 					<span className='projectsTittle__Tittle'>Projects</span>
 					<span className='projectsTittle__Text'>
 						Here you will find a variety of projects built in Angular, React, or
 						WordPress.
 					</span>
 				</div>
-				<div className='projectsCards' ref={cardsWrapperRef}>
+				<div className='projectsCards'>
 					<div className='projectsCards__Wrapper'>
 						{displayedImages.map((item) => (
 							<div key={item.id} className='projectsCards__Card'>
