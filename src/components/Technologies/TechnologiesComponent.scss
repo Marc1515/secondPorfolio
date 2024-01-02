@@ -6,10 +6,18 @@
 
 	.technologiesTittleContainer {
 		display: flex;
-		align-items: center;
-		padding-bottom: 5rem;
+		flex-flow: column nowrap;
+
 		height: 20%;
-		font-size: 2.5rem;
+
+		.technologiesTittleContainer__Tittle {
+			font-size: 2.5rem;
+		}
+		.technologiesTittleContainer__Text {
+			font-size: 1.5rem;
+			padding-top: 5rem;
+			padding-bottom: 5rem;
+		}
 	}
 
 	.TechCard {

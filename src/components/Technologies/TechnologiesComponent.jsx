@@ -18,6 +18,10 @@ const TechnologiesComponent = () => {
 					<span className='technologiesTittleContainer__Tittle'>
 						Technologies
 					</span>
+					<span className='technologiesTittleContainer__Text'>
+						A short explanation of what I can achieve in each of the
+						technologies.
+					</span>
 				</div>
 				{/* Basic Technologies */}
 				<div className='TechCard'>
