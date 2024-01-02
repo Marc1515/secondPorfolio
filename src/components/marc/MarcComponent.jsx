@@ -7,7 +7,7 @@ import './MarcComponent.scss';
 const MarcComponent = () => {
 	useEffect(() => {
 		const options = {
-			strings: ['BIENVENIDO A MI PORTFOLIO COMO DESARROLLADOR WEB'],
+			strings: ['WELL TO MY PORTFOLIO AS A WEB DEVELOPER'],
 			typeSpeed: 40,
 			backSpeed: 10,
 			loop: true,
@@ -37,7 +37,7 @@ const MarcComponent = () => {
 				<div className='buttonContainer'>
 					<button className='buttonContainer__Button'>
 						<a className='buttonContainer__Link' href={CV} download>
-							Descarga mi CV
+							DOWNLOAD MY CV
 						</a>
 					</button>
 				</div>

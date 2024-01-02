@@ -1,6 +1,7 @@
 import htmlSvgIMG from './../../assets/img/techSVG/html5-color.svg';
 import cssSvgIMG from './../../assets/img/techSVG/css3-color.svg';
 import sassSvgIMG from './../../assets/img/techSVG/sass-color.svg';
+import lessSvgIMG from './../../assets/img/techSVG/less-color.svg'
 import javaScriptSvgIMG from './../../assets/img/techSVG/javascript-color.svg';
 import typeScriptSvgIMG from './../../assets/img/techSVG/typescript-color.svg';
 import angularSvgIMG from './../../assets/img/techSVG/angular-color.svg';
@@ -16,6 +17,7 @@ const TechImages = {
 		htmlSVG: htmlSvgIMG,
 		cssSVG: cssSvgIMG,
         sassSVG: sassSvgIMG,
+		lessSvg: lessSvgIMG,
 		javaScriptSvg: javaScriptSvgIMG,
 		angularSVG: angularSvgIMG,
 		rxjsSvg: rxjsSvgIMG,
@@ -31,13 +33,13 @@ const TechImages = {
 		htmlCssJs:
 			'My experience in HTML allows me to effectively structure web content. Through CSS, I apply responsive and attractive designs, and with JavaScript, I manage dynamic interactions and API manipulation in my web projects.',
 		tailwindBootstrap:
-			'Utilizo Bootstrap para construir rápidamente interfaces de usuario responsivas con sus componentes predefinidos. Tailwind, en cambio, lo uso cuando necesito un control granular sobre el estilo, ya que proporciona una gran cantidad de clases utilitarias para construir diseños personalizados.',
-		typescriptRxjs:
-			'Como desarrollador entiendo como funciona el superset Typescript, que me permite escribir código más seguro y predecible gracias a su tipado fuerte. También tengo habilidades sólidas con RxJS, una biblioteca de programación reactiva que utilizo para manejar secuencias de eventos asíncronos con los operadores, permitiéndome un flujo de datos más eficiente y escalables.',
+			'I use Bootstrap to quickly build responsive user interfaces with its predefined components. On the other hand, I use Tailwind when I need granular control over the styling, as it provides a wide range of utility classes to build custom layouts.',
+		sassLess:
+			'I use Sass and Less in my web development because they offer an advanced syntax for CSS, allowing the use of variables, functions, and mixins, which simplifies and organizes the code. These preprocessors facilitate code reuse and maintenance, especially in large projects, by enabling a more concise and modular writing of style sheets',
 		reactAngular:
-			'Tengo un sólido entendimiento tanto de React como de Angular. Con React, puedo crear interfaces de usuario dinámicas y eficientes, aprovechando su modelo de componentes, la reconciliación de DOM virtual y el uso de los hooks. En Angular, manejo la creación de aplicaciones de página única a gran escala, utilizando su completo marco basado en TypeScript, con una profunda comprensión de los módulos, componentes, servicios, y enrutamiento.',
+			'I have a solid understanding of both React and Angular. With React, I can create dynamic and efficient user interfaces, leveraging its component model, virtual DOM reconciliation, and the use of hooks. In Angular, I excel in building large-scale single-page applications, using its comprehensive framework based on TypeScript, with a deep understanding of modules, components, services, and routing.',
 		wordpressWoocommerce:
-			'Tengo experiencia en la plataforma de gestión WordPress, para crear sitios web atractivos y funcionales. Adicionalmente, estoy familiarizado con WooCommerce que me permite la creación de tiendas online robustas y personalizables, incluyendo configuración de productos, métodos de pago, y gestión de envíos.',
+			'I have experience with the WordPress content management platform, enabling me to create attractive and functional websites. Additionally, I am familiar with WooCommerce, which allows me to build robust and customizable online stores, including product setup, payment methods, and shipping management.',
 	},
 };
 export default TechImages;

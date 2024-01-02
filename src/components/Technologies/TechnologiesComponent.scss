@@ -1,65 +1,82 @@
-.technologiesTittleContainer {
-	display: flex;
-	align-items: center;
-	padding-top: 5rem;
-	padding-bottom: 5rem;
-	height: 20%;
-	font-size: 2.5rem;
+.technologiesSection {
+	background-color: #0a2647;
+	min-height: 900px;
+	width: 100%;
+
+	.technologiesTittleContainer {
+		display: flex;
+		align-items: center;
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+		height: 20%;
+		font-size: 2.5rem;
+	}
+
+	.TechCard {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		width: 100%;
+		padding: 2rem;
+		margin-bottom: 3rem;
+		background: rgba(255, 255, 255, 0.1);
+		border-radius: 50px;
+		backdrop-filter: blur(4px);
+
+		.TechCard__Tittle {
+			font-size: 1.8rem;
+			padding-bottom: 2rem;
+		}
+
+		.TechCard__WrapperImgs {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-around;
+			padding-bottom: 2rem;
+
+			.TechCard__Img {
+				width: 5rem;
+			}
+		}
+
+		.TechCard__DropDownTittle {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+
+			&:first-child {
+				font-size: 1.3rem;
+			}
+		}
+
+		.TechCard__Text {
+			position: relative;
+			max-height: 0;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			visibility: hidden;
+			overflow: hidden;
+			transition:
+				max-height 0.3s ease-in-out,
+				visibility 0.3s ease-in-out;
+		}
+
+		.TechCard__DropDown.open .TechCard__Text {
+			max-height: 500px;
+			visibility: visible;
+		}
+	}
 }
 
-.TechCard {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: space-between;
+.spacer {
+	aspect-ratio: 960/300;
 	width: 100%;
-	padding: 2rem;
-	margin-bottom: 3rem;
-	border-radius: 50px;
-	background: #393939;
-	box-shadow:
-		20px 20px 60px #bebebe,
-		-20px -20px 60px #ffffff;
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
 
-	.TechCard__Tittle {
-		font-size: 1.8rem;
-		padding-bottom: 2rem;
-	}
-
-	.TechCard__WrapperImgs {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
-		padding-bottom: 2rem;
-
-		.TechCard__Img {
-			width: 5rem;
-		}
-	}
-
-	.TechCard__DropDownTittle {
-		display: flex;
-		flex-flow: row nowrap;
-		justify-content: space-between;
-
-		&:first-child {
-			font-size: 1.3rem;
-		}
-	}
-
-	.TechCard__Text {
-		position: relative;
-		max-height: 0;
-		padding-top: 1rem;
-		padding-bottom: 1rem;
-		visibility: hidden;
-		overflow: hidden;
-		transition:
-			max-height 0.3s ease-in-out,
-			visibility 0.3s ease-in-out;
-	}
-
-	.TechCard__DropDown.open .TechCard__Text {
-		max-height: 500px;
-		visibility: visible;
-	}
+.layer2 {
+	background-image: url('./../../assets/img/layer2.svg');
 }

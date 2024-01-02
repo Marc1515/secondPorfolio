@@ -10,7 +10,7 @@ const AboutComponent = () => {
 	return (
 		<>
 			<div className='spacer layer1'></div>
-			<section id='about'>
+			<section id='about' className='aboutSection'>
 				<div className='aboutTittleContainer'>
 					<span className='aboutTittleContainer__Tittle'>About Me</span>
 				</div>

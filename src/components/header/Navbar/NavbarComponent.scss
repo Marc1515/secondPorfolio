@@ -7,6 +7,7 @@
 	@include modules.typographyStyle(larger, bold);
 	background-color: var(--color-background);
 	color: var(--typography-color);
+	/* opacity: 0.96; */
 
 	.navbar__list {
 		@include layout.flexHeader(flex, column, nowrap, center, center);
@@ -15,6 +16,7 @@
 			height: auto;
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
+			font-size: 2rem;
 
 			.navbar__link {
 				position: relative;

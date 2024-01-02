@@ -12,7 +12,8 @@ const TechnologiesComponent = () => {
 
 	return (
 		<>
-			<section id='technologies'>
+			{<div className='spacer layer2'></div>}
+			<section id='technologies' className='technologiesSection'>
 				<div className='technologiesTittleContainer'>
 					<span className='technologiesTittleContainer__Tittle'>
 						Technologies
@@ -84,24 +85,24 @@ const TechnologiesComponent = () => {
 							</span>
 						</div>
 						<div className='TechCard__Text'>
-							{TechImages.techDescriptions.htmlCssJs}
+							{TechImages.techDescriptions.tailwindBootstrap}
 						</div>
 					</div>
 				</div>
 				{/* CSS Libraries */}
-				{/* SuperSet and Pre-Processor */}
+				{/* Pre-Processors */}
 				<div className='TechCard'>
 					<span className='TechCard__Tittle'>Pre-Processors</span>
 					<div className='TechCard__WrapperImgs'>
 						<img
 							className='TechCard__Img'
-							src={TechImages.techBuild.typeScriptSvg}
-							alt='typeScript_img'
+							src={TechImages.techBuild.sassSVG}
+							alt='sass_img'
 						/>
 						<img
 							className='TechCard__Img'
-							src={TechImages.techBuild.sassSVG}
-							alt='tailwind_img'
+							src={TechImages.techBuild.lessSvg}
+							alt='less_img'
 						/>
 					</div>
 					<div
@@ -111,17 +112,17 @@ const TechnologiesComponent = () => {
 						onClick={() => toggleSection('TPT')}
 					>
 						<div className='TechCard__DropDownTittle'>
-							<span className='summary'>TypeScript & SASS</span>
+							<span className='summary'>SASS & LESS</span>
 							<span className='TechCard__ArrowIcon'>
 								{openSection === 'TPT' ? <FiChevronUp /> : <FiChevronDown />}
 							</span>
 						</div>
 						<div className='TechCard__Text'>
-							{TechImages.techDescriptions.htmlCssJs}
+							{TechImages.techDescriptions.sassLess}
 						</div>
 					</div>
 				</div>
-				{/* SuperSet and Pre-Processor */}
+				{/* Pre-Processors */}
 				{/* Frameworks */}
 				<div className='TechCard'>
 					<span className='TechCard__Tittle'>Frameworks</span>
@@ -150,7 +151,7 @@ const TechnologiesComponent = () => {
 							</span>
 						</div>
 						<div className='TechCard__Text'>
-							{TechImages.techDescriptions.htmlCssJs}
+							{TechImages.techDescriptions.reactAngular}
 						</div>
 					</div>
 				</div>
@@ -183,7 +184,7 @@ const TechnologiesComponent = () => {
 							</span>
 						</div>
 						<div className='TechCard__Text'>
-							{TechImages.techDescriptions.htmlCssJs}
+							{TechImages.techDescriptions.wordpressWoocommerce}
 						</div>
 					</div>
 				</div>

@@ -6,7 +6,8 @@ import './ContactComponent.scss';
 const ContactComponent = () => {
 	return (
 		<>
-			<section id='contact'>
+			<div className='spacer layer4'></div>
+			<section id='contact' className='contactSection'>
 				<div className='contactTitle'>
 					<span className='contactTitle__Title'>Contact</span>
 				</div>
