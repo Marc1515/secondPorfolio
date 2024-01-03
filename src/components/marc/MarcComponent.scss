@@ -1,48 +1,54 @@
+@use './../../styles/mixins' as mixins;
+
 .marcSection {
-	background: #205295;
-	min-height: 900px;
+	@include mixins.flexMarcSection(flex, column, nowrap, space-between);
+	@include mixins.paddingYMarcSection(2rem, 2rem);
 	width: 100%;
+	background: #205295;
 
 	.imgContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 100%;
+		@include mixins.flexImg(flex, center, center);
+		@include mixins.imgWidthHeight(100%, 100%);
 		padding: 2rem;
 		background: rgba(255, 255, 255, 0.1);
 		border-radius: 20px;
 		backdrop-filter: blur(4px);
 	}
 
-	.titleContainer {
-		display: flex;
-		align-items: center;
-		height: 20%;
-		font-size: 2.5rem;
-	}
-
-	.autoTypedContainer {
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		height: 20%;
-		width: 100%;
-		h4 {
-			font-size: larger;
-			min-height: 3rem;
+	.marcWrapper {
+		@include mixins.flexMarcWrapper(flex, column, nowrap, space-around);
+		@include mixins.wrapperWidthHeight(100%, 100%);
+		min-height: 400px;
+		.titleContainer {
+			display: flex;
+			align-items: center;
+			height: 20%;
+			font-size: 2.5rem;
 		}
-	}
 
-	.buttonContainer {
-		display: flex;
-		align-items: center;
-		&__Button {
+		.autoTypedContainer {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			height: 20%;
 			width: 100%;
-			height: 4.5rem;
-			background: rgba(255, 255, 255, 0.1);
-			border-radius: 50px;
-			backdrop-filter: blur(4px);
-			font-size: 1.5rem;
+			h4 {
+				font-size: larger;
+				min-height: 3rem;
+			}
+		}
+
+		.buttonContainer {
+			display: flex;
+			align-items: center;
+			&__Button {
+				width: 100%;
+				height: 4.5rem;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 50px;
+				backdrop-filter: blur(4px);
+				font-size: 1.5rem;
+			}
 		}
 	}
 }
