@@ -1,12 +1,13 @@
-@use './mixins' as mixin;
+@use './mixins' as mixins;
 
 section {
 	position: relative;
-	@include mixin.flexbox(flex, column, nowrap, space-between);
+	@include mixins.flexbox(flex, column, nowrap, space-between);
+	@include mixins.paddingSection(2rem);
+	@include mixins.minHeightSection(900px);
 	box-sizing: border-box;
 	top: 0;
 	left: 0;
-	padding: 1.5rem;
 	min-height: 100vh;
 	height: 100%;
 	width: 100%;
