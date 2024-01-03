@@ -23,23 +23,25 @@ const MarcComponent = () => {
 		<>
 			<section id='marc' className='marcSection'>
 				<div className='imgContainer'>
-					{<img src={fotoPerfil} alt='' className='imgContainer__Img' />}
+					<img src={fotoPerfil} alt='' className='imgContainer__Img' />
 				</div>
-				<div className='titleContainer'>
-					<span className='titleContainer__FullName'>
-						<span className='titleContainer__Name'>Marc </span>España
-					</span>
-				</div>
+				<div className='marcWrapper'>
+					<div className='titleContainer'>
+						<span className='titleContainer__FullName'>
+							<span className='titleContainer__Name'>Marc </span>España
+						</span>
+					</div>
 
-				<div className='autoTypedContainer'>
-					<h4 className='autoTypedContainer__Text' id='typed-heading'></h4>
-				</div>
-				<div className='buttonContainer'>
-					<button className='buttonContainer__Button'>
-						<a className='buttonContainer__Link' href={CV} download>
-							DOWNLOAD MY CV
-						</a>
-					</button>
+					<div className='autoTypedContainer'>
+						<h4 className='autoTypedContainer__Text' id='typed-heading'></h4>
+					</div>
+					<div className='buttonContainer'>
+						<button className='buttonContainer__Button'>
+							<a className='buttonContainer__Link' href={CV} download>
+								DOWNLOAD MY CV
+							</a>
+						</button>
+					</div>
 				</div>
 			</section>
 		</>
