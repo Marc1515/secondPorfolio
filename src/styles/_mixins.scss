@@ -87,3 +87,110 @@ $screens: 1199px;
 }
 
 // Navbar Styles ------------------------------ //
+
+// Section Styles ------------------------------ //
+
+@mixin paddingSection($padding) {
+	padding: $padding;
+
+	@media (min-width: $small-phones) {
+		padding: 3rem;
+	}
+
+	@media (min-width: $phones-small-tablets) {
+		padding: 4rem;
+	}
+
+	@media (min-width: $tablets-small-screens) {
+		padding: 5rem;
+	}
+
+	@media (min-width: $screens) {
+		padding: 8rem;
+	}
+}
+
+@mixin minHeightSection($minHeight) {
+	min-height: $minHeight;
+
+	@media (min-width: $small-phones) {
+		min-height: 1400px;
+	}
+
+	@media (min-width: $phones-small-tablets) {
+		min-height: 600px;
+	}
+
+	@media (min-width: $tablets-small-screens) {
+		min-height: 2000px;
+	}
+
+	@media (min-width: $screens) {
+		min-height: 2600px;
+	}
+}
+
+// Section Styles ------------------------------ //
+
+// Marc Styles ------------------------------ //
+
+@mixin flexMarcSection($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+
+	@media (min-width: $phones-small-tablets) {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: space-around;
+	}
+}
+
+@mixin paddingYMarcSection($paddingTop, $paddingBottom) {
+	padding-top: $paddingTop;
+	padding-bottom: $paddingBottom;
+
+	@media (min-width: $phones-small-tablets) {
+		padding-top: 8rem;
+		padding-bottom: 0;
+	}
+
+	@media (min-width: $tablets-small-screens) {
+		padding-top: 10rem;
+		padding-bottom: 0;
+	}
+}
+
+@mixin flexImg($flex, $justify, $align) {
+	display: $flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin imgWidthHeight($width, $height) {
+	width: $width;
+	height: $height;
+
+	@media (min-width: $tablets-small-screens) {
+		width: 40%;
+		height: 50%;
+	}
+}
+
+@mixin wrapperWidthHeight($width, $height) {
+	width: $width;
+	height: $height;
+
+	@media (min-width: $tablets-small-screens) {
+		width: 40%;
+		height: 100%;
+	}
+}
+
+@mixin flexMarcWrapper($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+}
+
+// Marc Styles ------------------------------ //
