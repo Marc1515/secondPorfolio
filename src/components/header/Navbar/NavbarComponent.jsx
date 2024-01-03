@@ -8,7 +8,7 @@ const NavbarComponent = () => {
 
 	const handleClick = (e) => {
 		const widthScreen = window.screen.width;
-		if (widthScreen <= 800) {
+		if (widthScreen < 992) {
 			toggleMenu();
 		}
 	};

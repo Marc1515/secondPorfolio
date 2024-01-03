@@ -52,6 +52,11 @@ $screens: 1199px;
 	font-size: $size;
 	font-weight: $weight;
 
+	@media (min-width: $phones-small-tablets) {
+		font-size: 2.8rem;
+		font-weight: bold;
+	}
+
 	@media (min-width: $tablets-small-screens) {
 		font-size: 2rem;
 		font-weight: 500;
