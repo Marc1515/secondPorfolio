@@ -1,27 +1,24 @@
-@use './../../../styles/layout' as layout;
-@use './../../../styles/modules' as modules;
+@use './../../../styles/mixins' as mixins;
 
 .navbar {
-	@include layout.flexHeader(flex, column, nowrap, center, center);
-	@include modules.navbarHeight(100vh);
-	@include modules.typographyStyle(larger, bold);
+	@include mixins.flexHeader(flex, column, nowrap, center, center);
+	@include mixins.navbarHeight(100vh);
 	background-color: var(--color-background);
 	color: var(--typography-color);
-	/* opacity: 0.96; */
 
 	.navbar__list {
-		@include layout.flexHeader(flex, column, nowrap, center, center);
+		@include mixins.flexHeader(flex, column, nowrap, center, center);
 
 		.navbar__item {
 			height: auto;
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
-			font-size: 2rem;
+			@include mixins.typographyStyle(1.8rem, bold);
 
 			.navbar__link {
 				position: relative;
 				text-align: center;
-				@include modules.linksUnderline(10px, 20px);
+				@include mixins.linksUnderline(10px, 20px);
 				transition: ease-in-out 0.5s;
 				cursor: pointer;
 

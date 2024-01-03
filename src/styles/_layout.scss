@@ -1,9 +1,5 @@
 @use './mixins' as mixin;
 
-/* Screens */
-
-$bigger-screen: 480px;
-
 section {
 	position: relative;
 	@include mixin.flexbox(flex, column, nowrap, space-between);
@@ -15,18 +11,3 @@ section {
 	height: 100%;
 	width: 100%;
 }
-
-// Navbar Styles ------------------------------ //
-
-@mixin flexHeader($flex, $direction, $cut, $justify, $align) {
-	display: $flex;
-	flex-flow: $direction $cut;
-	justify-content: $justify;
-	align-items: $align;
-
-	@media (min-width: $bigger-screen) {
-		flex-flow: row nowrap;
-	}
-}
-
-// Navbar Styles ------------------------------ //
