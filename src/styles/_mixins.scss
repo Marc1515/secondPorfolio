@@ -86,23 +86,23 @@ $screens: 1199px;
 	justify-content: $justify;
 }
 
-@mixin paddingSection($padding) {
-	padding: $padding;
+@mixin paddingSection($paddingY, $paddingX) {
+	padding: $paddingY $paddingX;
 
 	@media (min-width: $small-phones) {
-		padding: 3rem;
+		padding: 3rem 3rem;
 	}
 
 	@media (min-width: $phones-small-tablets) {
-		padding: 4rem;
+		padding: 4rem 4rem;
 	}
 
 	@media (min-width: $tablets-small-screens) {
-		padding: 5rem;
+		padding: 5rem 5rem;
 	}
 
 	@media (min-width: $screens) {
-		padding: 8rem;
+		padding: 8rem 8rem;
 	}
 }
 
@@ -231,3 +231,15 @@ $screens: 1199px;
 }
 
 // Marc Styles ------------------------------ //
+
+// Technologies Styles ------------------------------ //
+
+@mixin widthTechCard($widht) {
+	width: $widht;
+
+	@media (min-width: $phones-small-tablets) {
+		width: 47%;
+	}
+}
+
+// Technologies Styles ------------------------------ //
