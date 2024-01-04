@@ -1,0 +1,110 @@
+/* Screens */
+
+$small-phones: 576px;
+$phones-small-tablets: 767px;
+$tablets-small-screens: 991px;
+$screens: 1199px;
+
+// Marc Styles ------------------------------ //
+
+@mixin flexMarcSection($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+
+	@media (min-width: $phones-small-tablets) {
+		display: flex;
+		flex-flow: row-reverse nowrap;
+		justify-content: space-around;
+	}
+}
+
+@mixin minHeightMarcSection($minHeight) {
+	min-height: $minHeight;
+
+	@media (min-width: $phones-small-tablets) {
+		min-height: 600px;
+	}
+}
+
+@mixin paddingYMarcSection($paddingTop, $paddingBottom) {
+	padding-top: $paddingTop;
+	padding-bottom: $paddingBottom;
+
+	@media (min-width: $phones-small-tablets) {
+		padding-top: 8rem;
+		padding-bottom: 0;
+	}
+
+	@media (min-width: $tablets-small-screens) {
+		padding-top: 10rem;
+		padding-bottom: 0;
+	}
+}
+
+/* @mixin paddingXMarcSection($paddingLeft, $paddingRight) {
+	padding-left: $paddingLeft;
+	padding-right: $paddingRight;
+
+	@media (min-width: $tablets-small-screens) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+} */
+
+@mixin flexImg($flex, $justify, $align) {
+	display: $flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin imgWidthHeight($width, $height) {
+	width: $width;
+	height: $height;
+
+	@media (min-width: $phones-small-tablets) {
+		width: 40%;
+		height: 50%;
+	}
+
+	@media (min-width: $tablets-small-screens) {
+		width: 40%;
+		height: 50%;
+	}
+}
+
+@mixin wrapperWidthHeight($width, $height) {
+	width: $width;
+	height: $height;
+
+	@media (min-width: $phones-small-tablets) {
+		width: 40%;
+		height: 100%;
+	}
+	@media (min-width: $tablets-small-screens) {
+		width: 40%;
+		height: 100%;
+	}
+}
+
+@mixin flexMarcWrapper($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+
+	@media (min-width: $tablets-small-screens) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+	}
+}
+
+@mixin H4Height($height) {
+	height: $height;
+
+	@media (min-width: $phones-small-tablets) {
+		height: 4rem;
+	}
+}
+
+// Marc Styles ------------------------------ //

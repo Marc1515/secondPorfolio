@@ -1,0 +1,22 @@
+/* Screens */
+
+$small-phones: 576px;
+$phones-small-tablets: 767px;
+$tablets-small-screens: 991px;
+$screens: 1199px;
+
+// About Styles ------------------------------ //
+
+@mixin fontSizeText1($fontSize) {
+	font-size: $fontSize;
+
+	@media (min-width: $small-phones) {
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: $phones-small-tablets) {
+		font-size: 1.6rem;
+	}
+}
+
+// About Styles ------------------------------ //

@@ -1,0 +1,18 @@
+/* Screens */
+
+$small-phones: 576px;
+$phones-small-tablets: 767px;
+$tablets-small-screens: 991px;
+$screens: 1199px;
+
+// Technologies Styles ------------------------------ //
+
+@mixin widthTechCard($widht) {
+	width: $widht;
+
+	@media (min-width: $phones-small-tablets) {
+		width: 47%;
+	}
+}
+
+// Technologies Styles ------------------------------ //

@@ -1,4 +1,4 @@
-@use './../../styles/mixins' as mixins;
+@use './../../styles/mixins/navbar_mixins.scss' as mixins;
 
 .burguerButton {
 	position: fixed;
