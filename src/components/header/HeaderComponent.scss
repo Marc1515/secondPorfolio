@@ -12,7 +12,7 @@
 	position: fixed;
 	box-sizing: border-box;
 	width: 100%;
-	height: 100%;
+	@include mixins.navbarHeight(100vh);
 	z-index: 3;
 	top: 0;
 	left: 0;
