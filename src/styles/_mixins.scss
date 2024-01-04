@@ -5,16 +5,6 @@ $phones-small-tablets: 767px;
 $tablets-small-screens: 991px;
 $screens: 1199px;
 
-// FlexBox ------------------------------------ //
-
-@mixin flexbox($flex, $direction, $cut, $justify) {
-	display: $flex;
-	flex-flow: $direction $cut;
-	justify-content: $justify;
-}
-
-// FlexBox ------------------------------------ //
-
 // Navbar Styles ------------------------------ //
 
 @mixin flexHeader($flex, $direction, $cut, $justify, $align) {
@@ -90,6 +80,12 @@ $screens: 1199px;
 
 // Section Styles ------------------------------ //
 
+@mixin flexSection($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+}
+
 @mixin paddingSection($padding) {
 	padding: $padding;
 
@@ -118,16 +114,16 @@ $screens: 1199px;
 	}
 
 	@media (min-width: $phones-small-tablets) {
-		min-height: 600px;
+		min-height: 0;
 	}
 
-	@media (min-width: $tablets-small-screens) {
+	/* 	@media (min-width: $tablets-small-screens) {
 		min-height: 2000px;
 	}
 
 	@media (min-width: $screens) {
 		min-height: 2600px;
-	}
+	} */
 }
 
 // Section Styles ------------------------------ //
@@ -142,7 +138,7 @@ $screens: 1199px;
 	@media (min-width: $phones-small-tablets) {
 		display: flex;
 		flex-flow: row-reverse nowrap;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 }
 
@@ -161,6 +157,16 @@ $screens: 1199px;
 	}
 }
 
+/* @mixin paddingXMarcSection($paddingLeft, $paddingRight) {
+	padding-left: $paddingLeft;
+	padding-right: $paddingRight;
+
+	@media (min-width: $tablets-small-screens) {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+} */
+
 @mixin flexImg($flex, $justify, $align) {
 	display: $flex;
 	justify-content: $justify;
@@ -170,6 +176,11 @@ $screens: 1199px;
 @mixin imgWidthHeight($width, $height) {
 	width: $width;
 	height: $height;
+
+	@media (min-width: $phones-small-tablets) {
+		width: 40%;
+		height: 50%;
+	}
 
 	@media (min-width: $tablets-small-screens) {
 		width: 40%;
@@ -181,6 +192,10 @@ $screens: 1199px;
 	width: $width;
 	height: $height;
 
+	@media (min-width: $phones-small-tablets) {
+		width: 40%;
+		height: 100%;
+	}
 	@media (min-width: $tablets-small-screens) {
 		width: 40%;
 		height: 100%;
@@ -191,6 +206,20 @@ $screens: 1199px;
 	display: $flex;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
+
+	@media (min-width: $tablets-small-screens) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+	}
+}
+
+@mixin H4Height($height) {
+	height: $height;
+
+	@media (min-width: $phones-small-tablets) {
+		height: 4rem;
+	}
 }
 
 // Marc Styles ------------------------------ //
