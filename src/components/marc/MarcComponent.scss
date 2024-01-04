@@ -4,6 +4,7 @@
 	@include mixins.flexMarcSection(flex, column, nowrap, space-between);
 	@include mixins.paddingYMarcSection(2rem, 2rem);
 	@include mixins.minHeightMarcSection(800px);
+	height: 500px;
 	width: 100%;
 	background: #205295;
 
@@ -14,7 +15,7 @@
 
 		.imgContainer {
 			@include mixins.flexImg(flex, center, center);
-			@include mixins.imgWidthHeight(100%, 100%);
+			/* @include mixins.imgWidthHeight(100%, 100%); */
 			padding: 2rem;
 			background: rgba(255, 255, 255, 0.1);
 			border-radius: 20px;
