@@ -1,4 +1,4 @@
-@use './../../styles/mixins/marc_mixins.scss' as mixins;
+@use './../../styles/mixins';
 
 .marcSection {
 	@include mixins.flexMarcSection(flex, column, nowrap, space-between);

@@ -1,4 +1,4 @@
-@use './../../../styles/mixins/navbar_mixins.scss' as mixins;
+@use './../../../styles/mixins';
 
 .navbar {
 	@include mixins.flexHeader(flex, column, nowrap, center, center);
