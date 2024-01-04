@@ -7,50 +7,62 @@
 	width: 100%;
 	background: #205295;
 
-	.imgContainer {
-		@include mixins.flexImg(flex, center, center);
-		@include mixins.imgWidthHeight(100%, 100%);
-		padding: 2rem;
-		background: rgba(255, 255, 255, 0.1);
-		border-radius: 20px;
-		backdrop-filter: blur(4px);
-	}
-
-	.marcWrapper {
-		@include mixins.flexMarcWrapper(flex, column, nowrap, space-around);
-		@include mixins.wrapperWidthHeight(100%, 100%);
-		min-height: 300px;
+	.sectionWrapper {
+		@include mixins.flexMarcSection(flex, column, nowrap, space-between);
 		width: 100%;
-		.titleContainer {
-			display: flex;
-			align-items: center;
-			/* height: 20%; */
-			font-size: 2.5rem;
-		}
+		height: 100%;
 
-		.autoTypedContainer {
-			display: flex;
-			align-items: center;
-			gap: 0.5rem;
-			width: 100%;
-			h4 {
-				font-size: larger;
-				@include mixins.H4Height(2rem);
+		.imgContainer {
+			@include mixins.flexImg(flex, center, center);
+			@include mixins.imgWidthHeight(100%, 100%);
+			padding: 2rem;
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 20px;
+			backdrop-filter: blur(4px);
+			height: 100%;
+
+			img {
+				height: 100%;
+				width: 100%;
 			}
 		}
 
-		.buttonContainer {
-			display: flex;
-			align-items: center;
-			&__Button {
-				padding-left: 2rem;
-				padding-right: 2rem;
-				width: auto;
-				height: 4.5rem;
-				background: rgba(255, 255, 255, 0.1);
-				border-radius: 50px;
-				backdrop-filter: blur(4px);
-				font-size: 1.5rem;
+		.marcWrapper {
+			@include mixins.flexMarcWrapper(flex, column, nowrap, space-around);
+			@include mixins.wrapperWidthHeight(100%, 100%);
+			min-height: 300px;
+			width: 100%;
+			.titleContainer {
+				display: flex;
+				align-items: center;
+				/* height: 20%; */
+				font-size: 2.5rem;
+			}
+
+			.autoTypedContainer {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				width: 100%;
+				h4 {
+					font-size: larger;
+					@include mixins.H4Height(2rem);
+				}
+			}
+
+			.buttonContainer {
+				display: flex;
+				align-items: center;
+				&__Button {
+					padding-left: 2rem;
+					padding-right: 2rem;
+					width: auto;
+					height: 4.5rem;
+					background: rgba(255, 255, 255, 0.1);
+					border-radius: 50px;
+					backdrop-filter: blur(4px);
+					font-size: 1.5rem;
+				}
 			}
 		}
 	}

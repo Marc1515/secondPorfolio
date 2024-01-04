@@ -10,4 +10,9 @@ section {
 	left: 0;
 	height: 100%;
 	width: 100%;
+
+	.sectionWrapper {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
 }
