@@ -232,6 +232,22 @@ $screens: 1199px;
 
 // Marc Styles ------------------------------ //
 
+// About Styles ------------------------------ //
+
+@mixin fontSizeText1($fontSize) {
+	font-size: $fontSize;
+
+	@media (min-width: $small-phones) {
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: $phones-small-tablets) {
+		font-size: 1.6rem;
+	}
+}
+
+// About Styles ------------------------------ //
+
 // Technologies Styles ------------------------------ //
 
 @mixin widthTechCard($widht) {
