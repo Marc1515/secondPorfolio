@@ -3,6 +3,7 @@
 .marcSection {
 	@include mixins.flexMarcSection(flex, column, nowrap, space-between);
 	@include mixins.paddingYMarcSection(2rem, 2rem);
+	@include mixins.minHeightMarcSection(800px);
 	width: 100%;
 	background: #205295;
 
@@ -18,7 +19,7 @@
 	.marcWrapper {
 		@include mixins.flexMarcWrapper(flex, column, nowrap, space-around);
 		@include mixins.wrapperWidthHeight(100%, 100%);
-		min-height: 350px;
+		min-height: 300px;
 		width: 100%;
 		.titleContainer {
 			display: flex;
