@@ -26,6 +26,7 @@
 		flex-flow: column nowrap;
 		justify-content: center;
 		align-items: center;
+		width: 100%;
 
 		.contactCards__Card {
 			display: flex;
@@ -47,11 +48,11 @@
 			}
 
 			.contactCards__IconName {
-				font-size: 1.8rem;
+				/* font-size: 1.8rem; */
 			}
 
 			.contactCards__Info {
-				font-size: 1.8rem;
+				/* font-size: 1.8rem; */
 			}
 
 			.contactCards__Link {
