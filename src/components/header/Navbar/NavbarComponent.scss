@@ -1,10 +1,11 @@
 @use './../../../styles/mixins/mixins';
+@use './../../../styles/variables/variables';
 
 .navbar {
 	@include mixins.flexHeader(flex, column, nowrap, center, center);
 	@include mixins.navbarHeight(100vh);
-	background-color: var(--color-background);
-	color: var(--typography-color);
+	background-color: variables.$navbar-background;
+	color: variables.$text-color;
 
 	.navbar__list {
 		@include mixins.flexHeader(flex, column, nowrap, center, center);

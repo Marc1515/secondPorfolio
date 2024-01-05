@@ -1,8 +1,10 @@
+@use './../../styles/variables/variables';
+
 .projectsSection {
-	background-color: #081d36;
 	min-height: 900px;
 	width: 100%;
 	padding-top: 10rem;
+	background-color: variables.$quaternary-background-color;
 
 	.projectsTittle {
 		display: flex;

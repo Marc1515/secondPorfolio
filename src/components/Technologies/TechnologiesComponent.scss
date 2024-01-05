@@ -1,10 +1,11 @@
 @use './../../styles/mixins/mixins';
+@use './../../styles/variables/variables';
 
 .technologiesSection {
-	background-color: #0a2647;
 	min-height: 900px;
 	width: 100%;
 	padding-top: 10rem;
+	background-color: variables.$tertiary-background-color;
 
 	.technologiesTittleContainer {
 		display: flex;

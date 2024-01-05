@@ -1,11 +1,12 @@
 @use './../../styles/mixins/mixins';
+@use './../../styles/variables/variables';
 
 .aboutSection {
-	background: #144272;
 	height: 800px;
 	width: 100%;
 	padding-top: 10rem;
 	padding-bottom: 5rem;
+	background: variables.$secondary-background-color;
 
 	.sectionWrapper {
 		height: 100%;

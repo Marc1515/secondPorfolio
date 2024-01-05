@@ -1,4 +1,5 @@
 @use './../../styles/mixins/mixins';
+@use './../../styles/variables/variables';
 
 .marcSection {
 	@include mixins.flexMarcSection(flex, column, nowrap, space-between);
@@ -6,7 +7,7 @@
 	@include mixins.minHeightMarcSection(800px);
 	height: 500px;
 	width: 100%;
-	background: #205295;
+	background: variables.$primary-background-color;
 
 	.sectionWrapper {
 		@include mixins.flexMarcSection(flex, column, nowrap, space-between);
