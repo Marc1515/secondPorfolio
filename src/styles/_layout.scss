@@ -3,8 +3,8 @@
 section {
 	position: relative;
 	@include mixins.flexSection(flex, column, nowrap, space-between);
-	@include mixins.paddingSection(2rem, 2rem);
-	@include mixins.minHeightSection(900px);
+	@include mixins.paddingSection(2.5rem, 2.5rem);
+	/* @include mixins.minHeightSection(900px); */
 	box-sizing: border-box;
 	top: 0;
 	left: 0;

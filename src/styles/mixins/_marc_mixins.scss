@@ -7,7 +7,13 @@
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 
-	@media (min-width: screens.$phones-small-tablets) {
+	/* 	@media (min-height: screens.$large-phone-screen) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+	} */
+
+	@media (min-width: screens.$small-phones) {
 		display: flex;
 		flex-flow: row-reverse nowrap;
 		justify-content: space-around;
@@ -86,6 +92,12 @@
 	display: $flex;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
+
+	@media (min-height: screens.$large-phone-screen) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
+	}
 
 	@media (min-width: screens.$tablets-small-screens) {
 		display: flex;
