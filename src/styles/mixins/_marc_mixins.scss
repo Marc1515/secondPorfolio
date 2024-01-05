@@ -1,9 +1,4 @@
-/* Screens */
-
-$small-phones: 576px;
-$phones-small-tablets: 767px;
-$tablets-small-screens: 991px;
-$screens: 1199px;
+@use './../variables/screens';
 
 // Marc Styles ------------------------------ //
 
@@ -12,7 +7,7 @@ $screens: 1199px;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		display: flex;
 		flex-flow: row-reverse nowrap;
 		justify-content: space-around;
@@ -22,7 +17,7 @@ $screens: 1199px;
 @mixin minHeightMarcSection($minHeight) {
 	min-height: $minHeight;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		min-height: 600px;
 	}
 }
@@ -31,12 +26,12 @@ $screens: 1199px;
 	padding-top: $paddingTop;
 	padding-bottom: $paddingBottom;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		padding-top: 8rem;
 		padding-bottom: 0;
 	}
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		padding-top: 10rem;
 		padding-bottom: 0;
 	}
@@ -46,7 +41,7 @@ $screens: 1199px;
 	padding-left: $paddingLeft;
 	padding-right: $paddingRight;
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
@@ -62,12 +57,12 @@ $screens: 1199px;
 	width: $width;
 	height: $height;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		width: 40%;
 		height: 50%;
 	}
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		width: 40%;
 		height: 50%;
 	}
@@ -77,11 +72,11 @@ $screens: 1199px;
 	width: $width;
 	height: $height;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		width: 40%;
 		height: 100%;
 	}
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		width: 40%;
 		height: 100%;
 	}
@@ -92,7 +87,7 @@ $screens: 1199px;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		display: flex;
 		flex-flow: column nowrap;
 		justify-content: space-between;
@@ -102,7 +97,7 @@ $screens: 1199px;
 @mixin H4Height($height) {
 	height: $height;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		height: 4rem;
 	}
 }

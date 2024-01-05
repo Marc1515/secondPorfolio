@@ -1,20 +1,15 @@
-/* Screens */
-
-$small-phones: 576px;
-$phones-small-tablets: 767px;
-$tablets-small-screens: 991px;
-$screens: 1199px;
+@use './../variables/screens';
 
 // About Styles ------------------------------ //
 
 @mixin fontSizeText1($fontSize) {
 	font-size: $fontSize;
 
-	@media (min-width: $small-phones) {
+	@media (min-width: screens.$small-phones) {
 		font-size: 1.6rem;
 	}
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		font-size: 1.6rem;
 	}
 }

@@ -1,9 +1,4 @@
-/* Screens */
-
-$small-phones: 576px;
-$phones-small-tablets: 767px;
-$tablets-small-screens: 991px;
-$screens: 1199px;
+@use './../variables/screens';
 
 // Section Styles ------------------------------ //
 
@@ -16,19 +11,19 @@ $screens: 1199px;
 @mixin paddingSection($paddingY, $paddingX) {
 	padding: $paddingY $paddingX;
 
-	@media (min-width: $small-phones) {
+	@media (min-width: screens.$small-phones) {
 		padding: 3rem 3rem;
 	}
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		padding: 4rem 4rem;
 	}
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		padding: 5rem 5rem;
 	}
 
-	@media (min-width: $screens) {
+	@media (min-width: screens.$screens) {
 		padding: 8rem 8rem;
 	}
 }
@@ -36,11 +31,11 @@ $screens: 1199px;
 @mixin minHeightSection($minHeight) {
 	min-height: $minHeight;
 
-	@media (min-width: $small-phones) {
+	@media (min-width: screens.$small-phones) {
 		min-height: 1000px;
 	}
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		min-height: 400px;
 	}
 }

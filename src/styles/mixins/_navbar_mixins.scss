@@ -1,9 +1,4 @@
-/* Screens */
-
-$small-phones: 576px;
-$phones-small-tablets: 767px;
-$tablets-small-screens: 991px;
-$screens: 1199px;
+@use './../variables/screens';
 
 // Navbar Styles ------------------------------ //
 
@@ -13,7 +8,7 @@ $screens: 1199px;
 	justify-content: $justify;
 	align-items: $align;
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		flex-flow: row nowrap;
 	}
 }
@@ -21,7 +16,7 @@ $screens: 1199px;
 @mixin hiddenNavbar($transalteX) {
 	transform: translateX($transalteX);
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		transform: translateX(0);
 	}
 }
@@ -29,11 +24,11 @@ $screens: 1199px;
 @mixin navbarHeight($height) {
 	height: $height;
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		height: 6rem;
 	}
 
-	@media (min-width: $screens) {
+	@media (min-width: screens.$screens) {
 		height: 8rem;
 	}
 }
@@ -42,17 +37,17 @@ $screens: 1199px;
 	font-size: $size;
 	font-weight: $weight;
 
-	@media (min-width: $phones-small-tablets) {
+	@media (min-width: screens.$phones-small-tablets) {
 		font-size: 2.8rem;
 		font-weight: bold;
 	}
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		font-size: 2rem;
 		font-weight: 500;
 	}
 
-	@media (min-width: $screens) {
+	@media (min-width: screens.$screens) {
 		font-size: 2.6rem;
 		font-weight: 500;
 	}
@@ -61,7 +56,7 @@ $screens: 1199px;
 @mixin linksUnderline($paddingX, $paddingY) {
 	padding: $paddingX $paddingY;
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		padding: 12px 23px;
 	}
 }
@@ -70,7 +65,7 @@ $screens: 1199px;
 	left: $left;
 	width: $width;
 
-	@media (min-width: $tablets-small-screens) {
+	@media (min-width: screens.$tablets-small-screens) {
 		left: 10%;
 		width: 80%;
 	}
