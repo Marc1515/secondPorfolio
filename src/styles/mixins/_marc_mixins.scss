@@ -7,12 +7,6 @@
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 
-	/* 	@media (min-height: screens.$large-phone-screen) {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
-	} */
-
 	@media (min-width: screens.$small-phones) {
 		display: flex;
 		flex-flow: row-reverse nowrap;
@@ -20,13 +14,13 @@
 	}
 }
 
-@mixin minHeightMarcSection($minHeight) {
+/* @mixin minHeightMarcSection($minHeight) {
 	min-height: $minHeight;
 
 	@media (min-width: screens.$phones-small-tablets) {
 		min-height: 600px;
 	}
-}
+} */
 
 @mixin paddingYMarcSection($paddingTop, $paddingBottom) {
 	padding-top: $paddingTop;
@@ -43,23 +37,13 @@
 	}
 }
 
-/* @mixin paddingXMarcSection($paddingLeft, $paddingRight) {
-	padding-left: $paddingLeft;
-	padding-right: $paddingRight;
-
-	@media (min-width: screens.$tablets-small-screens) {
-		padding-left: 2rem;
-		padding-right: 2rem;
-	}
-} */
-
 @mixin flexImg($flex, $justify, $align) {
 	display: $flex;
 	justify-content: $justify;
 	align-items: $align;
 }
 
-@mixin imgWidthHeight($width, $height) {
+/* @mixin imgWidthHeight($width, $height) {
 	width: $width;
 	height: $height;
 
@@ -72,9 +56,9 @@
 		width: 40%;
 		height: 50%;
 	}
-}
+} */
 
-@mixin wrapperWidthHeight($width, $height) {
+/* @mixin wrapperWidthHeight($width, $height) {
 	width: $width;
 	height: $height;
 
@@ -86,7 +70,7 @@
 		width: 40%;
 		height: 100%;
 	}
-}
+} */
 
 @mixin flexMarcWrapper($flex, $direction, $cut, $justify) {
 	display: $flex;
@@ -106,11 +90,35 @@
 	}
 }
 
+@mixin fontSizeTitle($size) {
+	font-size: $size;
+
+	@media (min-height: screens.$large-phone-screen) {
+		font-size: 2.2rem;
+	}
+}
+
+@mixin fontSizeAutoTyped($size) {
+	font-size: $size;
+
+	@media (min-height: screens.$large-phone-screen) {
+		font-size: 1.2rem;
+	}
+}
+
 @mixin H4Height($height) {
 	height: $height;
 
 	@media (min-width: screens.$phones-small-tablets) {
 		height: 4rem;
+	}
+}
+
+@mixin fontSizeButton($size) {
+	font-size: $size;
+
+	@media (min-height: screens.$large-phone-screen) {
+		font-size: 1.4rem;
 	}
 }
 

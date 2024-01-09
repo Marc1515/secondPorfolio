@@ -2,9 +2,7 @@
 @use './../../styles/variables/variables';
 
 .marcSection {
-	/* @include mixins.flexMarcSection(flex, column, nowrap, space-between); */
 	@include mixins.paddingYMarcSection(2rem, 2rem);
-	/* @include mixins.minHeightMarcSection(800px); */
 	min-height: 600px;
 	height: 100vh;
 	width: 100%;
@@ -18,8 +16,7 @@
 
 		.imgContainer {
 			@include mixins.flexImg(flex, center, center);
-			/* @include mixins.imgWidthHeight(100%, 100%); */
-			padding: 2rem;
+			padding: 2rem 3rem;
 			background: rgba(255, 255, 255, 0.1);
 			border-radius: 20px;
 			backdrop-filter: blur(4px);
@@ -34,17 +31,17 @@
 
 		.marcWrapper {
 			@include mixins.flexMarcWrapper(flex, column, nowrap, space-between);
-			padding-top: 1rem;
+			padding-top: 2rem;
 			height: 100%;
 			width: 100%;
-			/* @include mixins.wrapperWidthHeight(100%, 100%); */
 			min-height: 16rem;
 			min-width: 16rem;
 			.titleContainer {
-				display: flex;
-				align-items: center;
-				/* height: 20%; */
-				font-size: 2.2rem;
+				width: 100%;
+
+				span {
+					@include mixins.fontSizeTitle(1.6rem);
+				}
 			}
 
 			.autoTypedContainer {
@@ -52,7 +49,7 @@
 				align-items: center;
 				width: 100%;
 				h4 {
-					font-size: 1rem;
+					@include mixins.fontSizeAutoTyped(0.8rem);
 					@include mixins.H4Height(2rem);
 				}
 			}
@@ -69,7 +66,7 @@
 					background: rgba(255, 255, 255, 0.1);
 					border-radius: 50px;
 					backdrop-filter: blur(4px);
-					font-size: 1.2rem;
+					@include mixins.fontSizeButton(1.2rem);
 				}
 			}
 		}
