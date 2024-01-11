@@ -1,9 +1,27 @@
 @use './../variables/screens';
 
-// About Styles ------------------------------ //
+// About Styles ---------------------------------------------------------------------------------------- //
+
+// About Wrapper ------------------------------ //
+
+@mixin gapSectionWrapper($gap) {
+	gap: $gap;
+
+	@media (min-height: screens.$large-phone-screen) {
+		gap: 0;
+	}
+}
+
+// About Wrapper ------------------------------ //
+
+// About Text 1 ------------------------------- //
 
 @mixin fontSizeText1($fontSize) {
 	font-size: $fontSize;
+
+	@media (min-height: screens.$large-phone-screen) {
+		font-size: 1.4rem;
+	}
 
 	@media (min-width: screens.$small-phones) {
 		font-size: 1.6rem;
@@ -14,4 +32,26 @@
 	}
 }
 
-// About Styles ------------------------------ //
+// About Text 1 ------------------------------- //
+
+// About Text 2 ------------------------------- //
+
+@mixin fontSizeText2($fontSize) {
+	font-size: $fontSize;
+
+	@media (min-height: screens.$large-phone-screen) {
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: screens.$small-phones) {
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: screens.$phones-small-tablets) {
+		font-size: 1.6rem;
+	}
+}
+
+// About Text 2 ------------------------------- //
+
+// About Styles ---------------------------------------------------------------------------------------- //

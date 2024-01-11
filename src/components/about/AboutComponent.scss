@@ -2,15 +2,17 @@
 @use './../../styles/variables/variables';
 
 .aboutSection {
-	height: 800px;
+	height: 100vh;
 	width: 100%;
-	padding-top: 10rem;
-	padding-bottom: 10rem;
 	background: variables.$secondary-background-color;
 
 	.sectionWrapper {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-around;
 		height: 100%;
 		width: 100%;
+		@include mixins.gapSectionWrapper(2rem);
 		.aboutTittleContainer {
 			display: flex;
 			align-items: center;
@@ -22,15 +24,17 @@
 			display: flex;
 			flex-flow: column nowrap;
 			justify-content: center;
-			align-items: center;
+			align-items: flex-start;
 			height: 100%;
-			gap: 5rem;
+			gap: 4rem;
 
 			.textContainer__Text1 {
 				@include mixins.fontSizeText1(1rem);
+				max-width: 600px;
 			}
 			.textContainer__Text2 {
-				font-size: 1rem;
+				@include mixins.fontSizeText1(1.2rem);
+				max-width: 600px;
 			}
 		}
 
