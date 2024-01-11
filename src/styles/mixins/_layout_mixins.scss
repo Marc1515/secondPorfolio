@@ -2,12 +2,6 @@
 
 // Section Styles ------------------------------ //
 
-@mixin flexSection($flex, $direction, $cut, $justify) {
-	display: $flex;
-	flex-flow: $direction $cut;
-	justify-content: $justify;
-}
-
 @mixin paddingSection($paddingY, $paddingX) {
 	padding: $paddingY $paddingX;
 
