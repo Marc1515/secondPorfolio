@@ -96,13 +96,6 @@
 	}
 }
 
-@mixin fontSizeButton($size) {
-	font-size: $size;
-
-	@media (min-height: screens.$large-phone-screen) {
-		font-size: 1.4rem;
-	}
-}
 // Marc Wrapper ------------------------------ //
 
 // Marc Styles ---------------------------------------------------------------------------------------- //
