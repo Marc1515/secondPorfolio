@@ -22,16 +22,4 @@
 	}
 }
 
-@mixin minHeightSection($minHeight) {
-	min-height: $minHeight;
-
-	@media (min-width: screens.$small-phones) {
-		min-height: 1000px;
-	}
-
-	@media (min-width: screens.$phones-small-tablets) {
-		min-height: 400px;
-	}
-}
-
 // Section Styles ------------------------------ //
