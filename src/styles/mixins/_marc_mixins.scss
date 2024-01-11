@@ -82,6 +82,10 @@
 	@media (min-height: screens.$large-phone-screen) {
 		font-size: 1.2rem;
 	}
+
+	@media (min-width: screens.$tablets-small-screens) {
+		font-size: 1.4rem;
+	}
 }
 
 @mixin H4Height($height) {
