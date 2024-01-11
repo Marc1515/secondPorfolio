@@ -5,11 +5,12 @@
 	height: 800px;
 	width: 100%;
 	padding-top: 10rem;
-	padding-bottom: 5rem;
+	padding-bottom: 10rem;
 	background: variables.$secondary-background-color;
 
 	.sectionWrapper {
 		height: 100%;
+		width: 100%;
 		.aboutTittleContainer {
 			display: flex;
 			align-items: center;
@@ -23,13 +24,13 @@
 			justify-content: center;
 			align-items: center;
 			height: 100%;
+			gap: 5rem;
 
 			.textContainer__Text1 {
-				@include mixins.fontSizeText1(1.2rem);
-				padding-bottom: 5rem;
+				@include mixins.fontSizeText1(1rem);
 			}
 			.textContainer__Text2 {
-				font-size: 1.4rem;
+				font-size: 1rem;
 			}
 		}
 
