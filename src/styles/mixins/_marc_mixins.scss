@@ -27,13 +27,6 @@
 	}
 }
 
-@mixin gapSectionWrapper($gap) {
-	gap: $gap;
-
-	@media (min-width: screens.$small-phones) {
-		gap: 4rem;
-	}
-}
 // Marc Section ------------------------------ //
 
 // Marc Img ---------------------------------- //
