@@ -29,16 +29,6 @@
 
 // Marc Section ------------------------------ //
 
-// Marc Img ---------------------------------- //
-
-@mixin flexImg($flex, $justify, $align) {
-	display: $flex;
-	justify-content: $justify;
-	align-items: $align;
-}
-
-// Marc Img ---------------------------------- //
-
 // Marc Wrapper ------------------------------ //
 
 @mixin gapMarcWrapper($gap) {
