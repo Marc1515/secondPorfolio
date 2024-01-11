@@ -1,41 +1,42 @@
 @use './../variables/screens';
 
-// Marc Styles ------------------------------ //
+// Marc Styles ---------------------------------------------------------------------------------------- //
 
-@mixin flexMarcSection($flex, $direction, $cut, $justify) {
+// Marc Section ------------------------------ //
+
+@mixin flexMarcSection($flex, $direction, $cut, $justify, $align) {
 	display: $flex;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
+	align-items: $align;
 
 	@media (min-width: screens.$small-phones) {
 		display: flex;
 		flex-flow: row-reverse nowrap;
 		justify-content: space-around;
+		align-items: center;
 	}
 }
-
-/* @mixin minHeightMarcSection($minHeight) {
-	min-height: $minHeight;
-
-	@media (min-width: screens.$phones-small-tablets) {
-		min-height: 600px;
-	}
-} */
 
 @mixin paddingYMarcSection($paddingTop, $paddingBottom) {
 	padding-top: $paddingTop;
 	padding-bottom: $paddingBottom;
 
-	@media (min-width: screens.$phones-small-tablets) {
-		padding-top: 8rem;
-		padding-bottom: 0;
-	}
-
-	@media (min-width: screens.$tablets-small-screens) {
+	@media (min-width: screens.$screens) {
 		padding-top: 10rem;
-		padding-bottom: 0;
 	}
 }
+
+@mixin gapSectionWrapper($gap) {
+	gap: $gap;
+
+	@media (min-width: screens.$small-phones) {
+		gap: 4rem;
+	}
+}
+// Marc Section ------------------------------ //
+
+// Marc Img ---------------------------------- //
 
 @mixin flexImg($flex, $justify, $align) {
 	display: $flex;
@@ -43,50 +44,23 @@
 	align-items: $align;
 }
 
-/* @mixin imgWidthHeight($width, $height) {
-	width: $width;
-	height: $height;
+// Marc Img ---------------------------------- //
 
-	@media (min-width: screens.$phones-small-tablets) {
-		width: 40%;
-		height: 50%;
-	}
+// Marc Wrapper ------------------------------ //
 
-	@media (min-width: screens.$tablets-small-screens) {
-		width: 40%;
-		height: 50%;
-	}
-} */
-
-/* @mixin wrapperWidthHeight($width, $height) {
-	width: $width;
-	height: $height;
-
-	@media (min-width: screens.$phones-small-tablets) {
-		width: 40%;
-		height: 100%;
-	}
-	@media (min-width: screens.$tablets-small-screens) {
-		width: 40%;
-		height: 100%;
-	}
-} */
-
-@mixin flexMarcWrapper($flex, $direction, $cut, $justify) {
-	display: $flex;
-	flex-flow: $direction $cut;
-	justify-content: $justify;
+@mixin gapMarcWrapper($gap) {
+	gap: $gap;
 
 	@media (min-height: screens.$large-phone-screen) {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-around;
+		gap: 6rem;
+	}
+
+	@media (min-width: screens.$small-phones) {
+		gap: 4rem;
 	}
 
 	@media (min-width: screens.$tablets-small-screens) {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-between;
+		gap: 7rem;
 	}
 }
 
@@ -95,6 +69,10 @@
 
 	@media (min-height: screens.$large-phone-screen) {
 		font-size: 2.2rem;
+	}
+
+	@media (min-width: screens.$tablets-small-screens) {
+		font-size: 2.6rem;
 	}
 }
 
@@ -109,7 +87,7 @@
 @mixin H4Height($height) {
 	height: $height;
 
-	@media (min-width: screens.$phones-small-tablets) {
+	@media (min-width: screens.$small-phones) {
 		height: 4rem;
 	}
 }
@@ -121,5 +99,6 @@
 		font-size: 1.4rem;
 	}
 }
+// Marc Wrapper ------------------------------ //
 
-// Marc Styles ------------------------------ //
+// Marc Styles ---------------------------------------------------------------------------------------- //
