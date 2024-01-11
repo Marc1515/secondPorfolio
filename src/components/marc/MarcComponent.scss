@@ -55,7 +55,7 @@
 				align-items: center;
 				max-width: 350px;
 				h4 {
-					@include mixins.fontSizeAutoTyped(0.8rem);
+					@include mixins.fontSizeAutoTyped(1rem);
 					@include mixins.H4Height(2rem);
 				}
 			}
