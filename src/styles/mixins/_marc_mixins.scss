@@ -67,10 +67,6 @@
 @mixin fontSizeTitle($size) {
 	font-size: $size;
 
-	@media (min-height: screens.$large-phone-screen) {
-		font-size: 2.2rem;
-	}
-
 	@media (min-width: screens.$tablets-small-screens) {
 		font-size: 2.6rem;
 	}
