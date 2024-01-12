@@ -2,6 +2,32 @@
 
 // About Styles ---------------------------------------------------------------------------------------- //
 
+// About Section Wrapper ----------------------- //
+
+@mixin gapAboutSectionWrapper($gap) {
+	gap: $gap;
+
+	@media (min-width: screens.$phones-small-tablets) {
+		gap: 8rem;
+	}
+}
+
+// About Section Wrapper ----------------------- //
+
+// About Content Wrapper ----------------------- //
+
+@mixin flexAboutContentWrapper($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+
+	@media (min-width: screens.$phones-small-tablets) {
+		flex-direction: row;
+	}
+}
+
+// About Content Wrapper ----------------------- //
+
 // About Text Container ------------------------ //
 
 @mixin maxWidthTextContainer($max) {
@@ -34,6 +60,10 @@
 	@media (min-width: screens.$tablets-small-screens) {
 		font-size: 2rem;
 	}
+
+	@media (min-width: screens.$screens) {
+		font-size: 1rem;
+	}
 }
 
 // About Text 1 ------------------------------- //
@@ -58,8 +88,28 @@
 	@media (min-width: screens.$tablets-small-screens) {
 		font-size: 2rem;
 	}
+
+	@media (min-width: screens.$screens) {
+		font-size: 1rem;
+	}
 }
 
 // About Text 2 ------------------------------- //
+
+// Social Media Icons ------------------------- //
+
+@mixin flexSocialMediaIconsContainer($flex, $direction, $cut, $justify) {
+	display: $flex;
+	flex-flow: $direction $cut;
+	justify-content: $justify;
+
+	@media (min-width: screens.$phones-small-tablets) {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+	}
+}
+
+// Social Media Icons ------------------------- //
 
 // About Styles ---------------------------------------------------------------------------------------- //

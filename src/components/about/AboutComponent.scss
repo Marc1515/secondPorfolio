@@ -9,40 +9,52 @@
 	.aboutSectionWrapper {
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: space-around;
+		justify-content: start;
 		height: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
+		@include mixins.gapAboutSectionWrapper(4rem);
 		.aboutTittleContainer {
 			display: flex;
 			align-items: center;
-			height: 20%;
+			padding-top: 4rem;
 		}
 
-		.textContainer {
-			display: flex;
-			flex-flow: column nowrap;
-			justify-content: center;
-			align-items: flex-start;
-			height: 100%;
-			@include mixins.maxWidthTextContainer(600px);
-			gap: 4rem;
+		.aboutContentWrapper {
+			@include mixins.flexAboutContentWrapper(
+				flex,
+				column,
+				nowrap,
+				space-between
+			);
 
-			.textContainer__Text1 {
-				@include mixins.fontSizeText1(1rem);
+			.textContainer {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: start;
+				align-items: flex-start;
+				@include mixins.maxWidthTextContainer(600px);
+				gap: 4rem;
+
+				.textContainer__Text1 {
+					@include mixins.fontSizeText1(1rem);
+				}
+				.textContainer__Text2 {
+					@include mixins.fontSizeText2(1.2rem);
+				}
 			}
-			.textContainer__Text2 {
-				@include mixins.fontSizeText2(1.2rem);
-			}
-		}
 
-		.socialMediaIconsContainer {
-			display: flex;
-			flex-flow: row nowrap;
-			justify-content: space-around;
+			.socialMediaIconsContainer {
+				@include mixins.flexSocialMediaIconsContainer(
+					flex,
+					row,
+					nowrap,
+					space-between
+				);
 
-			.socialMediaIconsContainer__icon {
-				font-size: 1.8rem;
+				.socialMediaIconsContainer__icon {
+					font-size: 1.8rem;
+				}
 			}
 		}
 	}
