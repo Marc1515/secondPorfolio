@@ -29,7 +29,7 @@ const MarcComponent = () => {
 					<div className='marcWrapper'>
 						<div className='titleContainer'>
 							<span className='titleContainer__FullName'>
-								<span className='titleContainer__Name'>Marc </span>España
+								<h1 className='titleContainer__Name'>Marc </h1>España
 							</span>
 						</div>
 

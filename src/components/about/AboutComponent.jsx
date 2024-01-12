@@ -13,7 +13,7 @@ const AboutComponent = () => {
 			<section id='about' className='aboutSection'>
 				<div className='aboutSectionWrapper'>
 					<div className='aboutTittleContainer'>
-						<span className='aboutTittleContainer__Tittle'>About Me</span>
+						<h1 className='aboutTittleContainer__Tittle'>About Me</h1>
 					</div>
 					<div className='textContainer'>
 						<p className='textContainer__Text1'>
