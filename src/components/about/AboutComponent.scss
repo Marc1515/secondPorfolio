@@ -11,8 +11,9 @@
 		flex-flow: column nowrap;
 		justify-content: space-around;
 		height: 100%;
-		width: 100%;
-		@include mixins.gapSectionWrapper(2rem);
+		max-width: 1000px;
+		margin: 0 auto;
+		/* @include mixins.gapSectionWrapper(2rem); */
 		.aboutTittleContainer {
 			display: flex;
 			align-items: center;
