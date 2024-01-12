@@ -2,17 +2,17 @@
 
 // About Styles ---------------------------------------------------------------------------------------- //
 
-// About Wrapper ------------------------------ //
+// About Text Container ------------------------ //
 
-@mixin gapSectionWrapper($gap) {
-	gap: $gap;
+@mixin maxWidthTextContainer($max) {
+	max-width: $max;
 
-	@media (min-height: screens.$large-phone-screen) {
-		gap: 0;
+	@media (min-width: screens.$tablets-small-screens) {
+		max-width: 800px;
 	}
 }
 
-// About Wrapper ------------------------------ //
+// About Text Container ------------------------ //
 
 // About Text 1 ------------------------------- //
 
@@ -29,6 +29,10 @@
 
 	@media (min-width: screens.$phones-small-tablets) {
 		font-size: 1.6rem;
+	}
+
+	@media (min-width: screens.$tablets-small-screens) {
+		font-size: 2rem;
 	}
 }
 
@@ -49,6 +53,10 @@
 
 	@media (min-width: screens.$phones-small-tablets) {
 		font-size: 1.6rem;
+	}
+
+	@media (min-width: screens.$tablets-small-screens) {
+		font-size: 2rem;
 	}
 }
 

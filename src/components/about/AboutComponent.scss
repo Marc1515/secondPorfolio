@@ -13,7 +13,6 @@
 		height: 100%;
 		max-width: 1000px;
 		margin: 0 auto;
-		/* @include mixins.gapSectionWrapper(2rem); */
 		.aboutTittleContainer {
 			display: flex;
 			align-items: center;
@@ -27,15 +26,14 @@
 			justify-content: center;
 			align-items: flex-start;
 			height: 100%;
+			@include mixins.maxWidthTextContainer(600px);
 			gap: 4rem;
 
 			.textContainer__Text1 {
 				@include mixins.fontSizeText1(1rem);
-				max-width: 600px;
 			}
 			.textContainer__Text2 {
-				@include mixins.fontSizeText1(1.2rem);
-				max-width: 600px;
+				@include mixins.fontSizeText2(1.2rem);
 			}
 		}
 
