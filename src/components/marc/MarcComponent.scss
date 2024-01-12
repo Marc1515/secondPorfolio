@@ -6,7 +6,7 @@
 	width: 100%;
 	background: variables.$primary-background-color;
 
-	.sectionWrapper {
+	.marcSectionWrapper {
 		@include mixins.flexMarcSection(
 			flex,
 			column,

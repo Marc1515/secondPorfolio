@@ -11,7 +11,7 @@ const AboutComponent = () => {
 		<>
 			<div className='spacer layer1'></div>
 			<section id='about' className='aboutSection'>
-				<div className='sectionWrapper'>
+				<div className='aboutSectionWrapper'>
 					<div className='aboutTittleContainer'>
 						<span className='aboutTittleContainer__Tittle'>About Me</span>
 					</div>

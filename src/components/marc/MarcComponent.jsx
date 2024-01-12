@@ -22,7 +22,7 @@ const MarcComponent = () => {
 	return (
 		<>
 			<section id='marc' className='marcSection'>
-				<div className='sectionWrapper'>
+				<div className='marcSectionWrapper'>
 					<div className='imgContainer'>
 						<img src={fotoPerfil} alt='' className='imgContainer__Img' />
 					</div>
