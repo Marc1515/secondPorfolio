@@ -17,7 +17,7 @@ function HeaderComponent() {
 
 	return (
 		<>
-			{windowWidth < 992 && (
+			{windowWidth < 767 && (
 				<div className='burguerButton'>
 					<BurguerButtonComponent toggleMenu={toggleMenu} />
 				</div>
