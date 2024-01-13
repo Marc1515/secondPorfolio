@@ -78,6 +78,18 @@
 
 // Tech Card Dropdown Arrow Icon  ---------------- //
 
+// Tech Card Dropdown Text  ---------------------- //
+
+@mixin fontSizeDropdownText($size) {
+	font-size: $size;
+
+	@media (min-width: screens.$tablets-small-screens) {
+		font-size: 1.2rem;
+	}
+}
+
+// Tech Card Dropdown Text  ---------------------- //
+
 // Tech Card Dropdown  --------------------------- //
 
 // Tech Card  ------------------------------------ //
