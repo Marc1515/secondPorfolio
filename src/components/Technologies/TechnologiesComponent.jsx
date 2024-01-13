@@ -14,11 +14,14 @@ const TechnologiesComponent = () => {
 		<>
 			{<div className='spacer layer2'></div>}
 			<section id='technologies' className='technologiesSection'>
-				<div className='sectionWrapper'>
+				<div className='technologieSectionWrapper'>
 					<div className='technologiesTittleContainer'>
 						<span className='technologiesTittleContainer__Tittle'>
 							Technologies
 						</span>
+					</div>
+
+					<div className='technologiesTextContainer'>
 						<span className='technologiesTittleContainer__Text'>
 							A short explanation of what I can achieve in each of the
 							technologies.
