@@ -2,6 +2,18 @@
 
 // About Styles ---------------------------------------------------------------------------------------- //
 
+// About Title --------------------------------- //
+
+@mixin paddingTopTitleAbout($padding) {
+	padding-top: $padding;
+
+	@media (min-width: screens.$phones-small-tablets) {
+		padding-top: 5rem;
+	}
+}
+
+// About Title --------------------------------- //
+
 // About Section Wrapper ----------------------- //
 
 @mixin gapAboutSectionWrapper($gap) {
@@ -21,7 +33,7 @@
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 
-	@media (min-width: screens.$phones-small-tablets) {
+	@media (min-width: screens.$tablets-small-screens) {
 		flex-direction: row;
 	}
 }
@@ -33,8 +45,16 @@
 @mixin maxWidthTextContainer($max) {
 	max-width: $max;
 
+	@media (min-width: screens.$phones-small-tablets) {
+		max-width: 600px;
+	}
+
 	@media (min-width: screens.$tablets-small-screens) {
-		max-width: 800px;
+		max-width: 650px;
+	}
+
+	@media (min-width: screens.$screens) {
+		max-width: 700px;
 	}
 }
 
@@ -62,7 +82,7 @@
 	}
 
 	@media (min-width: screens.$screens) {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 }
 
@@ -90,7 +110,7 @@
 	}
 
 	@media (min-width: screens.$screens) {
-		font-size: 1rem;
+		font-size: 1.3rem;
 	}
 }
 
@@ -103,10 +123,31 @@
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 
-	@media (min-width: screens.$phones-small-tablets) {
+	@media (min-width: screens.$tablets-small-screens) {
 		display: flex;
 		flex-flow: column nowrap;
-		justify-content: space-between;
+		justify-content: start;
+		gap: 7rem;
+	}
+
+	@media (min-width: screens.$screens) {
+		gap: 4rem;
+	}
+}
+
+@mixin sizeSocialMediaIcons($size) {
+	font-size: $size;
+
+	@media (min-height: screens.$large-phone-screen) {
+		font-size: 1.4rem;
+	}
+}
+
+@mixin paddingSocialMediaIcons($paddingY, $paddingX) {
+	padding: $paddingY $paddingX;
+
+	@media (min-width: screens.$tablets-small-screens) {
+		padding: 0 1rem;
 	}
 }
 
