@@ -15,8 +15,6 @@
 		margin: 0 auto;
 		@include mixins.gapAboutSectionWrapper(4rem);
 		.aboutTittleContainer {
-			display: flex;
-			align-items: center;
 			@include mixins.paddingTopTitleAbout(3rem);
 		}
 
