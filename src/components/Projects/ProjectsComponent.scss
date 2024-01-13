@@ -1,89 +1,87 @@
 @use './../../styles/variables/variables';
 
 .projectsSection {
-	min-height: 900px;
+	height: 100%;
 	width: 100%;
-	padding-top: 10rem;
 	background-color: variables.$quaternary-background-color;
 
-	.projectsTittle {
-		display: flex;
-		flex-flow: column;
-		align-items: start;
+	.projectsSectionWrapper {
+		max-width: 1000px;
+		margin: 0 auto;
 
-		.projectsTittle__Tittle {
-			height: 20%;
-			font-size: 2.5rem;
+		.projectsTittleContainer {
+			padding-top: 3rem;
+
+			.projectsTittle__Tittle {
+				font-size: 2.5rem;
+			}
 		}
+		.projectsTextContainer {
+			padding: 5rem 0;
 
-		.projectsTittle__Text {
-			padding-top: 5rem;
-			padding-bottom: 5rem;
-			height: 20%;
-			font-size: 1.5rem;
-		}
-	}
-
-	.projectsCards__Card {
-		display: flex;
-		flex-flow: column nowrap;
-		justify-content: space-between;
-		min-height: 40rem;
-		max-height: 45rem;
-		width: 100%;
-		padding: 2.5rem;
-		margin-bottom: 3rem;
-		background: rgba(255, 255, 255, 0.1);
-		border-radius: 50px;
-		backdrop-filter: blur(4px);
-
-		a {
-			width: 100%;
-			img {
-				height: 15rem;
+			.projectsTextContainer__Text {
+				font-size: 1rem;
 			}
 		}
 
-		.projectsCards__Links {
+		.projectsCards {
 			display: flex;
-			flex-flow: row nowrap;
-			justify-content: center;
-			align-items: center;
-
-			a {
-				width: 100%;
-				font-size: 3.5rem;
-			}
-		}
-		.projectsCards__Name {
-			font-size: 1.8rem;
-			text-align: center;
-		}
-
-		.projectsCards__TechImg {
-			display: flex;
-			flex-flow: row nowrap;
+			flex-flow: row wrap;
 			justify-content: space-around;
-			align-items: center;
+			gap: 2rem;
 			width: 100%;
 
-			img {
-				width: 3.5rem;
+			.projectsCards__Card {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: space-between;
+				gap: 2rem;
+				width: 100%;
+				padding: 2.5rem;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 50px;
+				backdrop-filter: blur(4px);
+
+				a {
+					width: 100%;
+					img {
+						height: 15rem;
+					}
+				}
+
+				.projectsCards__Links {
+					display: flex;
+					flex-flow: row nowrap;
+					justify-content: center;
+					align-items: center;
+
+					a {
+						width: 100%;
+						font-size: 2.5rem;
+					}
+				}
+				.projectsCards__Name {
+					font-size: 1.5rem;
+					text-align: center;
+				}
+
+				.projectsCards__TechImg {
+					display: flex;
+					flex-flow: row nowrap;
+					justify-content: space-around;
+					align-items: center;
+					width: 100%;
+
+					img {
+						width: 2.5rem;
+					}
+				}
+			}
+
+			.projectsCards_Pagination {
+				margin: 0 auto;
 			}
 		}
-	}
-
-	.projectsCards_Pagination {
-		display: flex;
-		justify-content: center;
-
-		button {
-			color: #fff;
-		}
-
-		/* .css-19micn4-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-			background-color: yellow;
-		} */
 	}
 }
 
