@@ -10,6 +10,14 @@
 	@media (min-width: screens.$phones-small-tablets) {
 		padding-top: 5rem;
 	}
+
+	@media (min-width: screens.$tablets-small-screens) {
+		padding-top: 20rem;
+	}
+
+	@media (min-width: screens.$screens) {
+		padding-top: 3rem;
+	}
 }
 
 // About Title --------------------------------- //
@@ -96,7 +104,6 @@
 	justify-content: $justify;
 
 	@media (min-width: screens.$tablets-small-screens) {
-		display: flex;
 		flex-flow: column nowrap;
 		justify-content: start;
 		gap: 7rem;
