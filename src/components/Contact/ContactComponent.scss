@@ -42,9 +42,7 @@
 				gap: 2rem;
 				@include mixins.widthContactCard(100%);
 				padding: 2.5rem;
-				background: rgba(255, 255, 255, 0.1);
-				border-radius: 50px;
-				backdrop-filter: blur(4px);
+				@include mixins.neomorphismBoxStyle();
 
 				.contactCards__Icon {
 					height: 3rem;

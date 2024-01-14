@@ -38,9 +38,7 @@
 				gap: 3rem;
 				@include mixins.widthTechCard(100%);
 				@include mixins.paddingTechCard(2.5rem);
-				background: rgba(255, 255, 255, 0.1);
-				border-radius: 50px;
-				backdrop-filter: blur(4px);
+				@include mixins.neomorphismBoxStyle();
 
 				.TechCard__Tittle {
 					@include mixins.fontSizeTitleTechCard(1.6rem);

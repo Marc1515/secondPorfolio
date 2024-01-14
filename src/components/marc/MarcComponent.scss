@@ -26,9 +26,7 @@
 		.imgContainer {
 			display: block;
 			padding: 2rem 3rem;
-			background: rgba(255, 255, 255, 0.1);
-			border-radius: 20px;
-			backdrop-filter: blur(4px);
+			@include mixins.neomorphismBoxStyle();
 			width: 100%;
 
 			img {
