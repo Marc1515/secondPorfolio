@@ -26,13 +26,9 @@ const ProjectsComponent = () => {
 	return (
 		<>
 			<div className='spacer layer3'></div>
-			<section className='projectsSection'>
+			<section id='projects' className='projectsSection'>
 				<div className='projectsSectionWrapper'>
-					<div
-						id='projects'
-						className='projectsTittleContainer'
-						ref={cardsWrapperRef}
-					>
+					<div className='projectsTittleContainer' ref={cardsWrapperRef}>
 						<h1 className='projectsTittleContainer__Tittle'>Projects</h1>
 					</div>
 
