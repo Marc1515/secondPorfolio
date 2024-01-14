@@ -9,17 +9,15 @@
 	.technologieSectionWrapper {
 		max-width: 1000px;
 		margin: 0 auto;
+
 		.technologiesTittleContainer {
 			@include mixins.paddingTopTechTitle(3rem);
-
-			.technologiesTittleContainer__Tittle {
-				font-size: 2.5rem;
-			}
 		}
 
 		.technologiesTextContainer {
 			padding: 5rem 0;
 			width: 100%;
+
 			.technologiesTittleContainer__Text {
 				font-size: 1.5rem;
 			}
@@ -31,6 +29,7 @@
 			justify-content: space-between;
 			gap: 2rem;
 			width: 100%;
+
 			.TechCard {
 				display: flex;
 				flex-flow: column nowrap;

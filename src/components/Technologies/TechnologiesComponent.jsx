@@ -16,9 +16,9 @@ const TechnologiesComponent = () => {
 			<section id='technologies' className='technologiesSection'>
 				<div className='technologieSectionWrapper'>
 					<div className='technologiesTittleContainer'>
-						<span className='technologiesTittleContainer__Tittle'>
+						<h1 className='technologiesTittleContainer__Tittle'>
 							Technologies
-						</span>
+						</h1>
 					</div>
 
 					<div className='technologiesTextContainer'>
