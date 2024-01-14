@@ -12,16 +12,16 @@
 			column,
 			nowrap,
 			space-between,
-			center
+			center,
+			1rem
 		);
 		max-width: 1000px;
 		margin: 0 auto;
 		height: 100%;
-		gap: 1rem;
 
-		@media (min-width: 576px) {
+		/* @media (min-width: 576px) {
 			gap: 4rem;
-		}
+		} */
 
 		.imgContainer {
 			display: block;

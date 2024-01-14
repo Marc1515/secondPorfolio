@@ -4,17 +4,20 @@
 
 // Marc Section ------------------------------ //
 
-@mixin flexMarcSection($flex, $direction, $cut, $justify, $align) {
+@mixin flexMarcSection($flex, $direction, $cut, $justify, $align, $gap) {
 	display: $flex;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
 	align-items: $align;
+	gap: $gap;
+
+	@media (min-height: screens.$large-phone-screen) {
+		justify-content: start;
+		gap: 4rem;
+	}
 
 	@media (min-width: screens.$small-phones) {
-		display: flex;
 		flex-flow: row-reverse nowrap;
-		justify-content: space-around;
-		align-items: center;
 	}
 }
 
