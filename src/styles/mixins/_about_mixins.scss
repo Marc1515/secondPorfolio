@@ -155,7 +155,7 @@
 	padding: $paddingY $paddingX;
 
 	@media (min-width: screens.$tablets-small-screens) {
-		padding: 0 1rem;
+		padding: 0;
 	}
 }
 
