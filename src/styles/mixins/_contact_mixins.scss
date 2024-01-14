@@ -2,6 +2,19 @@
 
 // Contact Styles ----------------------------------------------------------------------------------------- //
 
+// Contact Section ------------------------------ //
+
+@mixin heightContactSection($height) {
+	height: $height;
+
+	@media (min-width: screens.$phones-small-tablets) {
+		height: 100vh;
+		max-height: 1000px;
+	}
+}
+
+// Contact Section ------------------------------ //
+
 @mixin widthContactCard($widht) {
 	width: $widht;
 

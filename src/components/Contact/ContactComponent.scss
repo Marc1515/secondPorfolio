@@ -2,7 +2,7 @@
 @use './../../styles/mixins/mixins';
 
 .contactSection {
-	height: 100%;
+	@include mixins.heightContactSection(100%);
 	width: 100%;
 	background-color: variables.$quinary-background-color;
 
