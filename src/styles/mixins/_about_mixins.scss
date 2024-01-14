@@ -62,7 +62,7 @@
 
 // About Text 1 ------------------------------- //
 
-@mixin fontSizeText1($fontSize) {
+@mixin fontSizeText($fontSize) {
 	font-size: $fontSize;
 
 	@media (min-height: screens.$large-phone-screen) {
@@ -87,34 +87,6 @@
 }
 
 // About Text 1 ------------------------------- //
-
-// About Text 2 ------------------------------- //
-
-@mixin fontSizeText2($fontSize) {
-	font-size: $fontSize;
-
-	@media (min-height: screens.$large-phone-screen) {
-		font-size: 1.6rem;
-	}
-
-	@media (min-width: screens.$small-phones) {
-		font-size: 1.6rem;
-	}
-
-	@media (min-width: screens.$phones-small-tablets) {
-		font-size: 1.6rem;
-	}
-
-	@media (min-width: screens.$tablets-small-screens) {
-		font-size: 2rem;
-	}
-
-	@media (min-width: screens.$screens) {
-		font-size: 1.3rem;
-	}
-}
-
-// About Text 2 ------------------------------- //
 
 // Social Media Icons ------------------------- //
 

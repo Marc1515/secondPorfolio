@@ -38,10 +38,10 @@
 				gap: 4rem;
 
 				.textContainer__Text1 {
-					@include mixins.fontSizeText1(1rem);
+					@include mixins.fontSizeText(1rem);
 				}
 				.textContainer__Text2 {
-					@include mixins.fontSizeText2(1.2rem);
+					@include mixins.fontSizeText(1rem);
 				}
 			}
 
