@@ -1,5 +1,4 @@
 import { MdOutlineMail } from 'react-icons/md';
-import { AiFillLinkedin } from 'react-icons/ai';
 import { BsWhatsapp } from 'react-icons/bs';
 import './ContactComponent.scss';
 
@@ -8,9 +7,11 @@ const ContactComponent = () => {
 		<>
 			<div className='spacer layer4'></div>
 			<section id='contact' className='contactSection'>
-				<div className='sectionWrapper'>
-					<div className='contactTitle'>
-						<span className='contactTitle__Title'>Contact</span>
+				<div className='contactSectionWrapper'>
+					<div className='contactTittleContainer'>
+						<h1 className='contactTittleContainer__Title'>Contact</h1>
+					</div>
+					<div className='contactTextContainer'>
 						<span className='contactTitle__Text'>
 							You can contact me directly through any of these links.
 						</span>
@@ -29,8 +30,7 @@ const ContactComponent = () => {
 								Send a message
 							</a>
 						</div>
-					</div>
-					<div className='contactCards'>
+
 						<div className='contactCards__Card'>
 							<MdOutlineMail className='contactCards__Icon' />
 							<span className='contactCards__IconName'>Mail</span>
@@ -38,21 +38,6 @@ const ContactComponent = () => {
 							<a
 								className='contactCards__Link'
 								href='mailto:meq.1515@gmail.com'
-								target='_blank'
-								rel='noreferrer'
-							>
-								Send a message
-							</a>
-						</div>
-					</div>
-					<div className='contactCards'>
-						<div className='contactCards__Card'>
-							<AiFillLinkedin className='contactCards__Icon' />
-							<span className='contactCards__IconName'>LinkedIn</span>
-							<span className='contactCards__Info'>Marc España</span>
-							<a
-								className='contactCards__Link'
-								href='https://www.linkedin.com/in/marc-espa%C3%B1a-833924141/'
 								target='_blank'
 								rel='noreferrer'
 							>
