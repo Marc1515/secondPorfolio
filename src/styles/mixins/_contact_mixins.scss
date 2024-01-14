@@ -1,0 +1,13 @@
+@use './../variables/screens';
+
+// Contact Styles ----------------------------------------------------------------------------------------- //
+
+@mixin widthContactCard($widht) {
+	width: $widht;
+
+	@media (min-width: screens.$phones-small-tablets) {
+		width: 47%;
+	}
+}
+
+// Contact Styles ----------------------------------------------------------------------------------------- //
