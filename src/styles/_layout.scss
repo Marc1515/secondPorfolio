@@ -1,4 +1,16 @@
 @use './mixins/mixins';
+@use './variables/variables';
+
+body {
+	padding: 1rem 0;
+	background: linear-gradient(
+		to bottom,
+		variables.$primary-background-color 0%,
+		variables.$primary-background-color 50%,
+		variables.$quinary-background-color 50%,
+		variables.$quinary-background-color 100%
+	);
+}
 
 section {
 	position: relative;
