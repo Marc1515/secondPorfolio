@@ -21,15 +21,6 @@
 	}
 }
 
-@mixin paddingYMarcSection($paddingTop, $paddingBottom) {
-	padding-top: $paddingTop;
-	padding-bottom: $paddingBottom;
-
-	@media (min-width: screens.$screens) {
-		padding-top: 10rem;
-	}
-}
-
 // Marc Section ------------------------------ //
 
 // Marc Wrapper ------------------------------ //

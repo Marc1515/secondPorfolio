@@ -2,7 +2,6 @@
 @use './../../styles/variables/variables';
 
 .marcSection {
-	@include mixins.paddingYMarcSection(2rem, 2rem);
 	width: 100%;
 	background: variables.$primary-background-color;
 
@@ -18,10 +17,6 @@
 		max-width: 1000px;
 		margin: 0 auto;
 		height: 100%;
-
-		/* @media (min-width: 576px) {
-			gap: 4rem;
-		} */
 
 		.imgContainer {
 			display: block;
