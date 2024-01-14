@@ -22,7 +22,7 @@
 			display: block;
 			padding: 2rem 3rem;
 			@include mixins.neomorphismBoxStyle();
-			width: 100%;
+			@include mixins.widthImgContainer(100%);
 
 			img {
 				width: 100%;
