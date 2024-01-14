@@ -28,12 +28,8 @@
 		height: 6rem;
 	}
 
-	@media (min-width: screens.$tablets-small-screens) {
-		height: 6rem;
-	}
-
 	@media (min-width: screens.$screens) {
-		height: 8rem;
+		height: 5rem;
 	}
 }
 
@@ -48,7 +44,10 @@
 
 	@media (min-width: screens.$tablets-small-screens) {
 		font-size: 2rem;
-		font-weight: 500;
+	}
+
+	@media (min-width: screens.$screens) {
+		font-size: 1.5rem;
 	}
 }
 
