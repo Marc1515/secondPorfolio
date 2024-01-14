@@ -139,7 +139,15 @@
 	font-size: $size;
 
 	@media (min-height: screens.$large-phone-screen) {
-		font-size: 1.4rem;
+		font-size: 1.6rem;
+	}
+
+	@media (min-width: screens.$phones-small-tablets) {
+		font-size: 1.8rem;
+	}
+
+	@media (min-width: screens.$screens) {
+		font-size: 1.2rem;
 	}
 }
 

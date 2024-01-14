@@ -56,6 +56,7 @@
 				@include mixins.paddingSocialMediaIcons(1rem, 0);
 
 				.socialMediaIconsContainer__icon {
+					display: flex;
 					@include mixins.sizeSocialMediaIcons(1.2rem);
 				}
 			}
