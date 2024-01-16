@@ -1,4 +1,6 @@
 import { useState, useRef } from 'react';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './../../styles/material/themeProvider.js';
 import './ProjectsComponent.scss';
 import images from './ProjectsData.js';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
@@ -24,7 +26,7 @@ const ProjectsComponent = () => {
 	};
 
 	return (
-		<>
+		<ThemeProvider theme={theme}>
 			<div className='spacer layer3'></div>
 			<section id='projects' className='projectsSection'>
 				<div className='projectsSectionWrapper'>
@@ -103,7 +105,7 @@ const ProjectsComponent = () => {
 					</div>
 				</div>
 			</section>
-		</>
+		</ThemeProvider>
 	);
 };
 
