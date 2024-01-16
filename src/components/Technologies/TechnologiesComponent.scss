@@ -68,6 +68,11 @@
 
 						.TechCard__ArrowIcon {
 							@include mixins.sizeArrowIcon(1.2rem);
+
+							&:active {
+								transform: rotate(180deg);
+								transition: 0.3s ease-out;
+							}
 						}
 					}
 
