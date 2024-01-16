@@ -58,6 +58,23 @@
 				.socialMediaIconsContainer__icon {
 					display: flex;
 					@include mixins.sizeSocialMediaIcons(1.2rem);
+					background-color: transparent;
+					transition: 0.3s ease-out;
+
+					&:nth-child(1):hover {
+						color: #181717;
+						transform: scale(1.05) translateY(-3px);
+					}
+
+					&:nth-child(2):hover {
+						color: #e4405f;
+						transform: scale(1.05) translateY(-3px);
+					}
+
+					&:nth-child(3):hover {
+						color: #0a66c2;
+						transform: scale(1.05) translateY(-3px);
+					}
 				}
 			}
 		}
