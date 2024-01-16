@@ -57,7 +57,7 @@ const TechnologiesComponent = () => {
 								<div className='TechCard__DropDownTittle'>
 									<span className='summary'>HTML, CSS y JavaScript</span>
 									<span className='TechCard__ArrowIcon'>
-										{openSection === 'BT' ? <FiChevronUp /> : <FiChevronDown />}
+										{openSection === 'BT' ? <FiChevronDown /> : <FiChevronUp />}
 									</span>
 								</div>
 								<div className='TechCard__Text'>
@@ -91,9 +91,9 @@ const TechnologiesComponent = () => {
 									<span className='summary'>Bootstrap & Taildwind</span>
 									<span className='TechCard__ArrowIcon'>
 										{openSection === 'CSST' ? (
-											<FiChevronUp />
-										) : (
 											<FiChevronDown />
+										) : (
+											<FiChevronUp />
 										)}
 									</span>
 								</div>
@@ -128,9 +128,9 @@ const TechnologiesComponent = () => {
 									<span className='summary'>SASS & LESS</span>
 									<span className='TechCard__ArrowIcon'>
 										{openSection === 'TPT' ? (
-											<FiChevronUp />
-										) : (
 											<FiChevronDown />
+										) : (
+											<FiChevronUp />
 										)}
 									</span>
 								</div>
@@ -165,9 +165,9 @@ const TechnologiesComponent = () => {
 									<span className='summary'>TypeScript & RxJS</span>
 									<span className='TechCard__ArrowIcon'>
 										{openSection === 'SRT' ? (
-											<FiChevronUp />
-										) : (
 											<FiChevronDown />
+										) : (
+											<FiChevronUp />
 										)}
 									</span>
 								</div>
@@ -201,7 +201,7 @@ const TechnologiesComponent = () => {
 								<div className='TechCard__DropDownTittle'>
 									<span className='summary'>React & Angular</span>
 									<span className='TechCard__ArrowIcon'>
-										{openSection === 'FT' ? <FiChevronUp /> : <FiChevronDown />}
+										{openSection === 'FT' ? <FiChevronDown /> : <FiChevronUp />}
 									</span>
 								</div>
 								<div className='TechCard__Text'>
@@ -234,7 +234,7 @@ const TechnologiesComponent = () => {
 								<div className='TechCard__DropDownTittle'>
 									<span className='summary'>Wordpress & WooCommerce</span>
 									<span className='TechCard__ArrowIcon'>
-										{openSection === 'CT' ? <FiChevronUp /> : <FiChevronDown />}
+										{openSection === 'CT' ? <FiChevronDown /> : <FiChevronUp />}
 									</span>
 								</div>
 								<div className='TechCard__Text'>
