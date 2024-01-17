@@ -1,9 +1,12 @@
 import { useContext } from 'react';
 import { MenuContext } from '../../../context/MenuContext';
+import { ExpandNavbarContext } from '../../../context/ExpandNavbarContext';
 import { Link } from 'react-scroll';
 import './NavbarComponent.scss';
 
 const NavbarComponent = () => {
+	const { isScrolled } = useContext(ExpandNavbarContext);
+
 	const { toggleMenu } = useContext(MenuContext);
 
 	const handleClick = (e) => {
@@ -14,7 +17,7 @@ const NavbarComponent = () => {
 	};
 
 	return (
-		<nav className='navbar'>
+		<nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
 			<ul className='navbar__list'>
 				<li className='navbar__item'>
 					<Link
