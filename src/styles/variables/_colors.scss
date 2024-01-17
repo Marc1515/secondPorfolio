@@ -10,6 +10,7 @@ $quinary-background-color: #051323;
 
 // Others
 $background-color: #202731;
+$accent-color: #9a23b2;
 $text-color: #fff;
 
 :root {
@@ -25,5 +26,6 @@ $text-color: #fff;
 
 	// Others
 	--background-color: #{$background-color};
+	--accent-color: #{$accent-color};
 	--text-color: #{$text-color};
 }
