@@ -13,26 +13,6 @@
 	}
 }
 
-@mixin hiddenNavbar($transalteX) {
-	transform: translateX($transalteX);
-
-	@media (min-width: screens.$phones-small-tablets) {
-		transform: translateX(0);
-	}
-}
-
-@mixin navbarHeight($height) {
-	height: $height;
-
-	@media (min-width: screens.$phones-small-tablets) {
-		height: 6rem;
-	}
-
-	@media (min-width: screens.$screens) {
-		height: 5rem;
-	}
-}
-
 @mixin typographyStyle($size, $weight) {
 	font-size: $size;
 	font-weight: $weight;

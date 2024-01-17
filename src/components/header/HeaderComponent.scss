@@ -12,7 +12,7 @@
 	position: fixed;
 	box-sizing: border-box;
 	width: 100%;
-	@include mixins.navbarHeight(100vh);
+	@include mixins.heightHeader(100vh);
 	z-index: 3;
 	top: 0;
 	left: 0;
@@ -22,6 +22,6 @@
 	transform: translateX(0);
 
 	&.header--hidden {
-		@include mixins.hiddenNavbar(-100%);
+		@include mixins.hiddenHeader(-100%);
 	}
 }
