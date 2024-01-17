@@ -46,6 +46,7 @@ const theme = createTheme({
 						minWidth: '3rem',
 					},
 				},
+
 				page: {
 					'&.Mui-selected': {
 						backgroundColor: getCssColor('--accent-color'),
@@ -53,6 +54,22 @@ const theme = createTheme({
 					},
 					'&.Mui-selected:hover': {
 						backgroundColor: getCssColor('--primary-background-color'),
+					},
+				},
+
+				icon: {
+					fontSize: '2rem',
+
+					[`@media (min-width:${breakpoints.values.largePhonesTablets}px)`]: {
+						fontSize: '2.5rem',
+					},
+
+					[`@media (min-width:${breakpoints.values.tabletsSmallScreens}px)`]: {
+						fontSize: '3rem',
+					},
+
+					[`@media (min-width:${breakpoints.values.screens}px)`]: {
+						fontSize: '2rem',
 					},
 				},
 			},
