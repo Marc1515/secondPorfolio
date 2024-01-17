@@ -11,3 +11,19 @@ $quinary-background-color: #051323;
 // Others
 $background-color: #202731;
 $text-color: #fff;
+
+:root {
+	// Navbar
+	--navbar-background: #{$navbar-background};
+
+	// Backgrounds Section colors
+	--primary-background-color: #{$primary-background-color};
+	--secondary-background-color: #{$secondary-background-color};
+	--tertiary-background-color: #{$tertiary-background-color};
+	--quaternary-background-color: #{$quaternary-background-color};
+	--quinary-background-color: #{$quinary-background-color};
+
+	// Others
+	--background-color: #{$background-color};
+	--text-color: #{$text-color};
+}
