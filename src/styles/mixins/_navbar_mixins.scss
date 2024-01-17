@@ -2,7 +2,7 @@
 
 // Navbar Styles ------------------------------ //
 
-@mixin flexHeader($flex, $direction, $cut, $justify, $align) {
+@mixin flexNavbar($flex, $direction, $cut, $justify, $align) {
 	display: $flex;
 	flex-flow: $direction $cut;
 	justify-content: $justify;
