@@ -92,16 +92,16 @@ const ProjectsComponent = () => {
 								</div>
 							</div>
 						))}
-						<div className='projectsCards_Pagination'>
-							<Stack spacing={2}>
-								<Pagination
-									count={Math.ceil(images.length / imagesPerPage)}
-									color='secondary'
-									page={currentPage}
-									onChange={handlePageChange}
-								/>
-							</Stack>
-						</div>
+					</div>
+					<div className='pagination'>
+						<Stack spacing={2}>
+							<Pagination
+								count={Math.ceil(images.length / imagesPerPage)}
+								color='secondary'
+								page={currentPage}
+								onChange={handlePageChange}
+							/>
+						</Stack>
 					</div>
 				</div>
 			</section>
