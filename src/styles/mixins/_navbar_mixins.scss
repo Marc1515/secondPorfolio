@@ -49,14 +49,4 @@
 	}
 }
 
-@mixin underlineSeparation($left, $width) {
-	left: $left;
-	width: $width;
-
-	@media (min-width: screens.$tablets-small-screens) {
-		left: 10%;
-		width: 80%;
-	}
-}
-
 // Navbar Styles ------------------------------ //
