@@ -1,10 +1,12 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState, useRef } from 'react';
 import { MenuContext } from '../../../context/MenuContext';
 import { Link } from 'react-scroll';
 import './NavbarComponent.scss';
 
 const NavbarComponent = () => {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const lastScrollY = useRef(0); // Referencia para almacenar la última posición de scroll
+	const lastAppliedScrollY = useRef(0); // Nueva referencia para la última posición de scroll donde se aplicó la clase
 
 	const { toggleMenu } = useContext(MenuContext);
 
@@ -16,8 +18,27 @@ const NavbarComponent = () => {
 	};
 
 	const handleScroll = () => {
-		const offset = window.scrollY;
-		setIsScrolled(offset > 50);
+		const currentScroll = window.scrollY;
+
+		if (currentScroll === 0) {
+			setIsScrolled(false);
+		}
+
+		// Comprobar si se ha desplazado hacia abajo y ha pasado de 100px
+		if (currentScroll > lastScrollY.current && currentScroll > 100) {
+			setIsScrolled(true);
+			lastAppliedScrollY.current = currentScroll; // Actualizar la última posición de scroll donde se aplicó la clase
+		}
+		// Comprobar si se está desplazando hacia arriba y ha pasado 100px desde la última aplicación
+		else if (
+			currentScroll < lastScrollY.current &&
+			lastAppliedScrollY.current - currentScroll > 200
+		) {
+			setIsScrolled(false);
+		}
+
+		// Actualizar la última posición de scroll
+		lastScrollY.current = currentScroll;
 	};
 
 	useEffect(() => {
