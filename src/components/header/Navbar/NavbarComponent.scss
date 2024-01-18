@@ -4,8 +4,9 @@
 .navbar {
 	@include mixins.flexNavbar(flex, column, nowrap, center, center);
 	@include mixins.heightNavbar(100vh);
-	background-color: rgba($color: variables.$navbar-background, $alpha: 0.2);
+	background-color: rgba($color: variables.$navbar-background, $alpha: 1);
 	color: variables.$text-color;
+	transition: ease-in-out 0.3s;
 
 	.navbar__list {
 		@include mixins.flexNavbar(flex, column, nowrap, center, center);
@@ -53,6 +54,14 @@
 	}
 }
 
-.navbar-scrolled {
-	height: 2rem;
+@media (min-width: variables.$phones-small-tablets) {
+	.navbar-scrolled {
+		height: 4rem;
+		background-color: rgba($color: variables.$navbar-background, $alpha: 0.6);
+
+		.navbar__list .navbar__item {
+			font-size: 1.2rem;
+			font-weight: 500;
+		}
+	}
 }

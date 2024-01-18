@@ -32,7 +32,7 @@ const NavbarComponent = () => {
 		// Comprobar si se está desplazando hacia arriba y ha pasado 100px desde la última aplicación
 		else if (
 			currentScroll < lastScrollY.current &&
-			lastAppliedScrollY.current - currentScroll > 500
+			lastAppliedScrollY.current - currentScroll > 400
 		) {
 			setIsScrolled(false);
 		}

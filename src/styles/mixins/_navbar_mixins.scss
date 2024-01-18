@@ -17,7 +17,7 @@
 	height: $height;
 
 	@media (min-width: screens.$phones-small-tablets) {
-		height: 10rem;
+		height: 8rem;
 	}
 
 	@media (min-width: screens.$screens) {
@@ -27,7 +27,6 @@
 
 @mixin typographyStyle($size, $weight) {
 	font-size: $size;
-	font-weight: $weight;
 
 	@media (min-width: screens.$phones-small-tablets) {
 		font-size: 1.6rem;
