@@ -17,7 +17,8 @@
 			height: auto;
 			padding-top: 0.5rem;
 			padding-bottom: 0.5rem;
-			@include mixins.typographyStyle(1.8rem, bold);
+			@include mixins.typographySize(1.8rem);
+			font-weight: bold;
 
 			.navbar__link {
 				position: relative;
