@@ -1,11 +1,10 @@
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { MenuContext } from '../../../context/MenuContext';
-import { ExpandNavbarContext } from '../../../context/ExpandNavbarContext';
 import { Link } from 'react-scroll';
 import './NavbarComponent.scss';
 
 const NavbarComponent = () => {
-	const { isScrolled } = useContext(ExpandNavbarContext);
+	const [isScrolled, setIsScrolled] = useState(false);
 
 	const { toggleMenu } = useContext(MenuContext);
 
@@ -15,6 +14,17 @@ const NavbarComponent = () => {
 			toggleMenu();
 		}
 	};
+
+	const handleScroll = () => {
+		const offset = window.scrollY;
+		setIsScrolled(offset > 50);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, []);
 
 	return (
 		<nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
