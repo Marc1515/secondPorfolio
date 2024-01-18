@@ -2,18 +2,6 @@
 
 // Header Styles ------------------------------------------------------------------------ //
 
-@mixin heightHeader($height) {
-	height: $height;
-
-	@media (min-width: screens.$phones-small-tablets) {
-		height: 6rem;
-	}
-
-	@media (min-width: screens.$screens) {
-		height: 5rem;
-	}
-}
-
 @mixin hiddenHeader($transalteX) {
 	transform: translateX($transalteX);
 

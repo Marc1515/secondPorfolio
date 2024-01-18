@@ -3,7 +3,7 @@
 
 .navbar {
 	@include mixins.flexNavbar(flex, column, nowrap, center, center);
-	@include mixins.heightHeader(100vh);
+	@include mixins.heightNavbar(100vh);
 	background-color: variables.$navbar-background;
 	color: variables.$text-color;
 
