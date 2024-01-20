@@ -16,6 +16,7 @@
 		@include mixins.gapAboutSectionWrapper(4rem);
 		.aboutTittleContainer {
 			@include mixins.paddingTopTitleAbout(3rem);
+			@include mixins.reavealAnimation();
 		}
 
 		.aboutContentWrapper {
@@ -36,6 +37,7 @@
 				align-items: flex-start;
 				@include mixins.maxWidthTextContainer(400px);
 				gap: 4rem;
+				@include mixins.reavealAnimation();
 
 				.textContainer__Text1 {
 					@include mixins.fontSizeText(1rem);
@@ -60,6 +62,14 @@
 					@include mixins.sizeSocialMediaIcons(1.2rem);
 					background-color: transparent;
 					transition: 0.3s ease-out;
+					@include mixins.reavealAnimation(
+						reveal,
+						ease-out,
+						both,
+						view(),
+						0,
+						10%
+					);
 
 					&:nth-child(1):hover {
 						color: #181717;
