@@ -3,7 +3,6 @@
 
 .navbar {
 	@include mixins.flexNavbar(flex, column, nowrap, center, center);
-	@include mixins.heightNavbar(100vh);
 	background-color: rgba($color: variables.$navbar-background, $alpha: 1);
 	color: variables.$text-color;
 	transition: ease-in-out 0.3s;
@@ -19,7 +18,7 @@
 			padding-bottom: 0.5rem;
 			@include mixins.typographySize(1.8rem);
 			font-weight: 500;
-			transition: ease-in-out 0.5s;
+			transition: ease-in-out 0.3s;
 
 			.navbar__link {
 				position: relative;

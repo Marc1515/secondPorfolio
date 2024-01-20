@@ -13,18 +13,6 @@
 	}
 }
 
-@mixin heightNavbar($height) {
-	height: $height;
-
-	@media (min-width: screens.$phones-small-tablets) {
-		height: 8rem;
-	}
-
-	@media (min-width: screens.$screens) {
-		height: 5rem;
-	}
-}
-
 @mixin typographySize($size) {
 	font-size: $size;
 
