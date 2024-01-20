@@ -26,7 +26,7 @@ const AboutComponent = () => {
 							</p>
 							<p className='textContainer__Text2'>
 								CURRENTLY, I STUDY ON MY OWN AND SEEK TO EXPAND MY CAREER
-								OPORTUNITIES IN THE FIELD OF DEVELOPMENT WEB
+								OPORTUNITIES IN THE FIELD OF WEB DEVELOPMENT
 							</p>
 						</div>
 						<div className='socialMediaIconsContainer'>
