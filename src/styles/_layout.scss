@@ -1,6 +1,5 @@
 @use './mixins/mixins';
 @use './variables/variables';
-
 body {
 	padding: 1rem 0;
 	background: linear-gradient(
@@ -10,19 +9,19 @@ body {
 		variables.$quinary-background-color 50%,
 		variables.$quinary-background-color 100%
 	);
-}
 
-section {
-	position: relative;
-	@include mixins.paddingSection(2.5rem, 2.5rem);
-	box-sizing: border-box;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
+	section {
+		position: relative;
+		@include mixins.paddingSection(2.5rem, 2.5rem);
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		height: 100vh;
+		width: 100%;
 
-	h1 {
-		font-size: 2.5rem;
+		h1 {
+			font-size: 2.5rem;
+		}
 	}
 }
 
