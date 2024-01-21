@@ -29,6 +29,18 @@
 				transition: ease-in-out 0.3s;
 				cursor: pointer;
 
+				&.active {
+					color: variables.$tertiary-background-color; // Aplicar el color deseado para el estado activo
+
+					.navbar__underline {
+						// Estilos para la línea subrayada en el estado activo
+						height: 100%;
+						width: 100%;
+						transform: scale(1) translateY(-10px);
+						opacity: 1;
+					}
+				}
+
 				.navbar__underline {
 					position: absolute;
 					left: 0;

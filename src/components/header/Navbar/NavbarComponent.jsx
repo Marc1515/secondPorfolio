@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import './NavbarComponent.scss';
 
 const NavbarComponent = () => {
+	const [activeLink, setActiveLink] = useState(null);
 	const [isScrolled, setIsScrolled] = useState(false);
 	const lastScrollY = useRef(0); // Referencia para almacenar la última posición de scroll
 	const lastAppliedScrollY = useRef(0); // Nueva referencia para la última posición de scroll donde se aplicó la clase
@@ -47,6 +48,10 @@ const NavbarComponent = () => {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
+	const updateActiveLink = (link) => {
+		setActiveLink(link);
+	};
+
 	return (
 		<nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
 			<ul className='navbar__list'>
@@ -57,7 +62,8 @@ const NavbarComponent = () => {
 						spy={true}
 						smooth={true}
 						duration={500}
-						className='navbar__link'
+						className={`navbar__link ${activeLink === 'marc' ? 'active' : ''}`}
+						onSetActive={() => updateActiveLink('marc')}
 					>
 						Marc<span className='navbar__underline'></span>
 					</Link>
@@ -69,7 +75,8 @@ const NavbarComponent = () => {
 						spy={true}
 						smooth={true}
 						duration={500}
-						className='navbar__link'
+						className={`navbar__link ${activeLink === 'about' ? 'active' : ''}`}
+						onSetActive={() => updateActiveLink('about')}
 					>
 						About Me<span className='navbar__underline'></span>
 					</Link>
@@ -81,7 +88,10 @@ const NavbarComponent = () => {
 						spy={true}
 						smooth={true}
 						duration={500}
-						className='navbar__link'
+						className={`navbar__link ${
+							activeLink === 'technologies' ? 'active' : ''
+						}`}
+						onSetActive={() => updateActiveLink('technologies')}
 					>
 						Technologies<span className='navbar__underline'></span>
 					</Link>
@@ -93,7 +103,10 @@ const NavbarComponent = () => {
 						spy={true}
 						smooth={true}
 						duration={500}
-						className='navbar__link'
+						className={`navbar__link ${
+							activeLink === 'projects' ? 'active' : ''
+						}`}
+						onSetActive={() => updateActiveLink('projects')}
 					>
 						Projects<span className='navbar__underline'></span>
 					</Link>
@@ -105,7 +118,10 @@ const NavbarComponent = () => {
 						spy={true}
 						smooth={true}
 						duration={500}
-						className='navbar__link'
+						className={`navbar__link ${
+							activeLink === 'contact' ? 'active' : ''
+						}`}
+						onSetActive={() => updateActiveLink('contact')}
 					>
 						Contact<span className='navbar__underline'></span>
 					</Link>
