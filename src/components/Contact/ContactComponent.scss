@@ -12,13 +12,13 @@
 
 		.contactTittleContainer {
 			padding-top: 3rem;
-			@include mixins.revealAnimation();
+			@include mixins.revealBottomAnimation();
 		}
 
 		.contactTextContainer {
 			padding: 5rem 0;
 			width: 100%;
-			@include mixins.revealAnimation();
+			@include mixins.revealBottomAnimation();
 
 			.contactTextContainer__Text {
 				font-size: 1.2rem;
@@ -41,7 +41,7 @@
 				@include mixins.widthContactCard(100%);
 				padding: 2.5rem;
 				@include mixins.neomorphismBoxStyle();
-				@include mixins.revealAnimation();
+				@include mixins.revealBottomAnimation();
 
 				.contactCards__Icon {
 					height: 3rem;
