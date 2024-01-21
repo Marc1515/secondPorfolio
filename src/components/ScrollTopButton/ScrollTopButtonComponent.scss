@@ -1,0 +1,36 @@
+@use './../../styles/variables/variables';
+
+.scrollTopButton {
+	position: fixed;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 3;
+	font-size: 3rem;
+	border-radius: 50%;
+	opacity: 0;
+	background-color: variables.$accent-color;
+	animation: fadeIn ease-in 300ms;
+	animation-fill-mode: forwards;
+
+	&.fadeOut {
+		animation: fadeOut ease-out 300ms;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
