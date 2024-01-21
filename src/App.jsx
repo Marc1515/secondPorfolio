@@ -1,5 +1,6 @@
 import { MenuProvider } from './context/MenuContext';
 import HeaderComponent from './components/Header/HeaderComponent';
+import ScrollTopButtonComponent from './components/ScrollTopButton/ScrollTopButtonComponent';
 import MarcComponent from './components/Marc/MarcComponent';
 import AboutComponent from './components/About/aboutComponent';
 import TechnologiesComponent from './components/Technologies/TechnologiesComponent';
@@ -11,6 +12,7 @@ function App() {
 	return (
 		<MenuProvider>
 			<HeaderComponent />
+			<ScrollTopButtonComponent />
 			<MarcComponent />
 			<AboutComponent />
 			<TechnologiesComponent />
