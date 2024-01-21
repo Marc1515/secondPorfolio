@@ -15,6 +15,19 @@ function HeaderComponent() {
 		return () => window.removeEventListener('resize', handleResize);
 	}, []);
 
+	useEffect(() => {
+		// Cambiar el estilo del cuerpo cuando la Navbar esté abierta o cerrada
+		if (navbarOpen) {
+			document.body.style.overflow = 'hidden';
+		} else {
+			document.body.style.overflow = 'visible';
+		}
+
+		// Opcional: Limpiar el efecto al desmontar el componente
+		return () => {
+			document.body.style.overflow = 'visible';
+		};
+	}, [navbarOpen]);
 	return (
 		<>
 			{windowWidth < 767 && (
