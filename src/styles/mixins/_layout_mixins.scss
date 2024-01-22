@@ -1,5 +1,21 @@
 @use './../variables/screens';
 
+// Body Styles --------------------------------- //
+
+@mixin paddingBottomBody($paddingBottom) {
+	padding-bottom: $paddingBottom 0;
+
+	@media (min-height: screens.$large-phone-screen) {
+		padding-bottom: 2rem;
+	}
+
+	@media (min-height: screens.$super-large-screen) {
+		padding-bottom: 24rem;
+	}
+}
+
+// Body Styles --------------------------------- //
+
 // Section Styles ------------------------------ //
 
 @mixin paddingSection($paddingY, $paddingX) {

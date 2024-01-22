@@ -1,7 +1,7 @@
 @use './mixins/mixins';
 @use './variables/variables';
 body {
-	padding: 1rem 0;
+	@include mixins.paddingBottomBody(1);
 	background: linear-gradient(
 		to bottom,
 		variables.$primary-background-color 0%,
