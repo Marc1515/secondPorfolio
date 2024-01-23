@@ -5,6 +5,7 @@ import { useEffect, useState, useContext } from 'react';
 import { MenuContext } from '../../context/MenuContext';
 
 const ScrollTopButtonComponent = () => {
+	const [isPulsing, setIsPulsing] = useState(false);
 	const [isVisible, setIsVisible] = useState(false);
 	const [shouldFadeOut, setShouldFadeOut] = useState(false);
 	const { toggleMenu, navbarOpen } = useContext(MenuContext);
@@ -23,6 +24,10 @@ const ScrollTopButtonComponent = () => {
 	};
 
 	const scrollToTop = () => {
+		setIsPulsing(true);
+
+		setTimeout(() => setIsPulsing(false), 1000);
+
 		window.scrollTo({
 			top: 0,
 			behavior: 'smooth',
@@ -45,7 +50,9 @@ const ScrollTopButtonComponent = () => {
 		isVisible && (
 			<button
 				onClick={scrollToTop}
-				className={`scrollTopButton ${shouldFadeOut ? 'fadeOut' : ''}`}
+				className={`scrollTopButton ${shouldFadeOut ? 'fadeOut' : ''} ${
+					isPulsing ? 'pulsing' : ''
+				}`}
 			>
 				<MdKeyboardDoubleArrowUp />
 			</button>
