@@ -26,12 +26,14 @@ const ScrollTopButtonComponent = () => {
 	const scrollToTop = () => {
 		setIsPulsing(true);
 
-		setTimeout(() => setIsPulsing(false), 1000);
+		setTimeout(() => {
+			setIsPulsing(false);
 
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth',
-		});
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth',
+			});
+		}, 1000);
 
 		if (navbarOpen) {
 			toggleMenu();
