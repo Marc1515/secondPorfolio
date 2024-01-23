@@ -1,11 +1,12 @@
 @use './../../styles/variables/variables';
+@use './../../styles/mixins/mixins';
 
 .scrollTopButton {
 	position: fixed;
 	right: 1rem;
 	bottom: 1rem;
 	z-index: 3;
-	font-size: 3rem;
+	@include mixins.fontSizeScrollTopButton(3rem);
 	border-radius: 50%;
 	opacity: 0;
 	background-color: variables.$accent-color;
