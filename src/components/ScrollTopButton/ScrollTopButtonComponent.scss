@@ -3,8 +3,9 @@
 
 .scrollTopButton {
 	position: fixed;
-	right: 1rem;
-	bottom: 1rem;
+	cursor: pointer;
+	right: 1.5rem;
+	bottom: 1.5rem;
 	z-index: 3;
 	@include mixins.fontSizeScrollTopButton(3rem);
 	border-radius: 50%;
@@ -13,8 +14,35 @@
 	animation: fadeIn ease-in 300ms;
 	animation-fill-mode: forwards;
 
+	&.pulsing::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		border-radius: 50%;
+		background-color: variables.$accent-color;
+		z-index: -1;
+		animation-name: pulse;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+	}
+
 	&.fadeOut {
 		animation: fadeOut ease-out 300ms;
+	}
+}
+
+@keyframes pulse {
+	0% {
+		opacity: 0;
+		transform: scale(1);
+	}
+
+	100% {
+		opacity: 0.6;
+		transform: scale(1.6);
 	}
 }
 
