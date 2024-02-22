@@ -62,6 +62,7 @@
 					height: 4.5rem;
 					@include mixins.neomorphismBoxStyle();
 					font-size: 1.2rem;
+					color: #ffffff;
 					transition: 0.3s ease-in-out;
 
 					&:hover {
