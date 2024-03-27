@@ -58,36 +58,31 @@ const ProjectsComponent = () => {
 								</div>
 								<span className='projectsCards__Name'>{item.nombre}</span>
 								<div className='projectsCards__TechImg'>
-									{!(item.id === 6 || item.id === 7 || item.id === 8) &&
-										item.techBuild.htmlSVG && (
-											<img src={item.techBuild.htmlSVG} alt='' />
-										)}
-									{!(item.id === 6 || item.id === 7 || item.id === 8) &&
-										item.techBuild.cssSVG && (
-											<img src={item.techBuild.cssSVG} alt='' />
-										)}
+									<img src={item.techBuild.htmlSVG} alt='' />
+
+									<img src={item.techBuild.cssSVG} alt='' />
+
 									{!(item.id === 6 || item.id === 7 || item.id === 8) &&
 										item.techBuild.typeScriptSvg && (
 											<img src={item.techBuild.typeScriptSvg} alt='' />
 										)}
-									{(item.id === 1 || item.id === 2) &&
-										item.techBuild.angularSVG && (
-											<img src={item.techBuild.angularSVG} alt='' />
-										)}
-									{(item.id === 3 || item.id === 4 || item.id === 5) &&
+									{(item.id === 4 || item.id === 5 || item.id === 6) &&
 										item.techBuild.javaScriptSvg && (
 											<img src={item.techBuild.javaScriptSvg} alt='' />
 										)}
-									{(item.id === 3 || item.id === 4 || item.id === 5) &&
+									{(item.id === 2 || item.id === 3) &&
+										item.techBuild.angularSVG && (
+											<img src={item.techBuild.angularSVG} alt='' />
+										)}
+									{(item.id === 3 ||
+										item.id === 4 ||
+										item.id === 5 ||
+										item.id === 6) &&
 										item.techBuild.reactSVG && (
 											<img src={item.techBuild.reactSVG} alt='' />
 										)}
-									{(item.id === 6 || item.id === 7 || item.id === 8) &&
-										item.techBuild.wordpressSVG && (
-											<img src={item.techBuild.wordpressSVG} alt='' />
-										)}
-									{item.id === 7 && item.techBuild.wooSVG && (
-										<img src={item.techBuild.wooSVG} alt='' />
+									{item.id === 1 && item.techBuild.nextSVG && (
+										<img src={item.techBuild.nextSVG} alt='' />
 									)}
 								</div>
 							</div>
