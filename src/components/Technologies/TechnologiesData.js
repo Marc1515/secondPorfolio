@@ -7,6 +7,7 @@ import typeScriptSvgIMG from './../../assets/img/techSVG/typescript-color.svg';
 import angularSvgIMG from './../../assets/img/techSVG/angular-color.svg';
 import rxjsSvgIMG from './../../assets/img/techSVG/reactivex-color.svg';
 import reactSvgIMG from './../../assets/img/techSVG/react-color.svg';
+import nextSvgIMG from './../../assets/img/techSVG/nextdotjs-color';
 import wordpressSvgIMG from './../../assets/img/techSVG/wordpress-color.svg';
 import wooCommerceSvgIMG from './../../assets/img/techSVG/woo-color.svg';
 import bootstrapSvgIMG from './../../assets/img/techSVG/bootstrap-color.svg';
@@ -23,6 +24,7 @@ const TechImages = {
 		rxjsSvg: rxjsSvgIMG,
 		typeScriptSvg: typeScriptSvgIMG,
 		reactSVG: reactSvgIMG,
+		nextSVG: nextSvgIMG,
 		wordpressSVG: wordpressSvgIMG,
 		wooCommerceSVG: wooCommerceSvgIMG,
 		bootstrapSVG: bootstrapSvgIMG,
