@@ -1,4 +1,4 @@
-import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+import { RxDoubleArrowUp } from 'react-icons/rx';
 
 import './ScrollTopButtonComponent.scss';
 import { useEffect, useState, useContext } from 'react';
@@ -56,7 +56,7 @@ const ScrollTopButtonComponent = () => {
 					isPulsing ? 'pulsing' : ''
 				}`}
 			>
-				<MdKeyboardDoubleArrowUp />
+				<RxDoubleArrowUp />
 			</button>
 		)
 	);
