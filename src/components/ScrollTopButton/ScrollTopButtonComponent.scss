@@ -10,12 +10,17 @@
 	@include mixins.fontSizeScrollTopButton(3rem);
 	border-radius: 50%;
 	opacity: 0;
+	color: white;
 	background-color: variables.$accent-color;
 	animation-name: fadeIn;
 	animation-timing-function: ease-in;
 	animation-duration: 300ms;
 	animation-fill-mode: forwards;
 	transition: 0.3s ease-in-out;
+
+	:only-child {
+		padding: 0.7rem;
+	}
 
 	&:hover {
 		transform: translateY(-3px);
