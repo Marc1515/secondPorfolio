@@ -12,13 +12,11 @@
 
 		.technologiesTittleContainer {
 			@include mixins.paddingTopTechTitle(3rem);
-			@include mixins.revealBottomAnimation();
 		}
 
 		.technologiesTextContainer {
 			padding: 5rem 0;
 			width: 100%;
-			@include mixins.revealBottomAnimation();
 
 			.technologiesTittleContainer__Text {
 				font-size: 1.2rem;
@@ -40,7 +38,6 @@
 				@include mixins.widthTechCard(100%);
 				@include mixins.paddingTechCard(2.5rem);
 				@include mixins.neomorphismBoxStyle();
-				@include mixins.revealBottomAnimation();
 
 				.TechCard__Tittle {
 					@include mixins.fontSizeTitleTechCard(1.6rem);
