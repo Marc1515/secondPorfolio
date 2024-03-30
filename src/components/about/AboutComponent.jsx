@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faGithub,
@@ -7,18 +6,12 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import './AboutComponent.scss';
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 const AboutComponent = () => {
 	useEffect(() => {
-		ScrollReveal().reveal(
-			'.aboutTittleContainer, .textContainer__Text1, .textContainer__Text2, .socialMediaIconsContainer',
-			{
-				delay: 500,
-				distance: '50px',
-				easing: 'ease-in-out',
-				origin: 'bottom',
-				reset: false,
-			},
+		useScrollReveal(
+			'.aboutTittleContainer, .textContainer__Text1, .textContainer__Text2, .socialMediaIconsContainer__icon',
 		);
 	}, []);
 

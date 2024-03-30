@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './../../styles/material/themeProvider.js';
 import './ProjectsComponent.scss';
@@ -8,6 +7,7 @@ import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
+import useScrollReveal from '../../hooks/useScrollReveal.js';
 
 const ProjectsComponent = () => {
 	const [currentPage, setCurrentPage] = useState(1);
@@ -27,15 +27,8 @@ const ProjectsComponent = () => {
 	};
 
 	useEffect(() => {
-		ScrollReveal().reveal(
-			'.projectsTittleContainer, .projectsTextContainer, .projectsCards__Card',
-			{
-				delay: 500,
-				distance: '50px',
-				easing: 'ease-in-out',
-				origin: 'bottom',
-				reset: false,
-			},
+		useScrollReveal(
+			'.projectsTittleContainer, .projectsTextContainer, .projectsCards__Card, .pagination',
 		);
 	}, []);
 

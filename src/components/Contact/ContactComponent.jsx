@@ -1,20 +1,13 @@
 import { useEffect } from 'react';
-import ScrollReveal from 'scrollreveal';
 import { MdOutlineMail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 import './ContactComponent.scss';
+import useScrollReveal from '../../hooks/useScrollReveal';
 
 const ContactComponent = () => {
 	useEffect(() => {
-		ScrollReveal().reveal(
-			'.contactTittleContainer, .contactTextContainer, .contactCards__Card',
-			{
-				delay: 500,
-				distance: '50px',
-				easing: 'ease-in-out',
-				origin: 'bottom',
-				reset: false,
-			},
+		useScrollReveal(
+			'.contactTittleContainer, .contactTitle__Text, .contactCards__Card',
 		);
 	}, []);
 
