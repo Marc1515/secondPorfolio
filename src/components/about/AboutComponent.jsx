@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faGithub,
@@ -7,6 +9,19 @@ import {
 import './AboutComponent.scss';
 
 const AboutComponent = () => {
+	useEffect(() => {
+		ScrollReveal().reveal(
+			'.aboutTittleContainer, .textContainer__Text1, .textContainer__Text2, .socialMediaIconsContainer',
+			{
+				delay: 500,
+				distance: '50px',
+				easing: 'ease-in-out',
+				origin: 'bottom',
+				reset: false,
+			},
+		);
+	}, []);
+
 	return (
 		<>
 			<div className='spacer layer1'></div>

@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import TechImages from './TechnologiesData';
 import './TechnologiesComponent.scss';
@@ -9,6 +10,19 @@ const TechnologiesComponent = () => {
 	const toggleSection = (section) => {
 		setOpenSection((current) => (current === section ? null : section));
 	};
+
+	useEffect(() => {
+		ScrollReveal().reveal(
+			'.technologiesTittleContainer, .technologiesTextContainer, .TechCard',
+			{
+				delay: 500,
+				distance: '50px',
+				easing: 'ease-in-out',
+				origin: 'bottom',
+				reset: false,
+			},
+		);
+	}, []);
 
 	return (
 		<>

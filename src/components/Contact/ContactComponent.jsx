@@ -1,8 +1,23 @@
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import { MdOutlineMail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 import './ContactComponent.scss';
 
 const ContactComponent = () => {
+	useEffect(() => {
+		ScrollReveal().reveal(
+			'.contactTittleContainer, .contactTextContainer, .contactCards__Card',
+			{
+				delay: 500,
+				distance: '50px',
+				easing: 'ease-in-out',
+				origin: 'bottom',
+				reset: false,
+			},
+		);
+	}, []);
+
 	return (
 		<>
 			<div className='spacer layer4'></div>

@@ -1,4 +1,5 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './../../styles/material/themeProvider.js';
 import './ProjectsComponent.scss';
@@ -24,6 +25,19 @@ const ProjectsComponent = () => {
 			cardsWrapperRef.current.scrollIntoView({ behavior: 'smooth' });
 		}
 	};
+
+	useEffect(() => {
+		ScrollReveal().reveal(
+			'.projectsTittleContainer, .projectsTextContainer, .projectsCards__Card',
+			{
+				delay: 500,
+				distance: '50px',
+				easing: 'ease-in-out',
+				origin: 'bottom',
+				reset: false,
+			},
+		);
+	}, []);
 
 	return (
 		<ThemeProvider theme={theme}>
