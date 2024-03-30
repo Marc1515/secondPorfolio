@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 import Typed from 'typed.js';
 import fotoPerfil from './../../assets/img/fotoPerfil.png';
 import CV from './../../assets/MEQ.pdf';
@@ -17,6 +18,15 @@ const MarcComponent = () => {
 		return () => {
 			typed.destroy();
 		};
+	}, []);
+
+	useEffect(() => {
+		ScrollReveal().reveal('.marcSection', {
+			duration: 2000,
+			opacity: 0,
+			distance: '0px',
+			reset: false,
+		});
 	}, []);
 
 	return (

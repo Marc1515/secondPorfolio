@@ -10,8 +10,6 @@ body {
 		variables.$quinary-background-color 100%
 	);
 
-	@include mixins.revealFadeInAnimation();
-
 	section {
 		position: relative;
 		@include mixins.paddingSection(2.5rem, 2.5rem);
