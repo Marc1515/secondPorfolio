@@ -7,7 +7,7 @@ import { useScrollReveal } from '../../hooks/useRevealHooks';
 const ContactComponent = () => {
 	useEffect(() => {
 		useScrollReveal(
-			'.contactTittleContainer, .contactTitle__Text, .contactCards__Card',
+			'.contactTittleContainer, .contactTextContainer, .contactCards__Card',
 		);
 	}, []);
 
