@@ -2,8 +2,8 @@ import ScrollReveal from 'scrollreveal';
 
 export const useScrollReveal = (selector, options = {}) => {
 	ScrollReveal().reveal(selector, {
-		delay: 500,
-		distance: '50px',
+		delay: 300,
+		distance: '100px',
 		easing: 'ease-in-out',
 		origin: 'bottom',
 		reset: false,
