@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { MdOutlineMail } from 'react-icons/md';
 import { BsWhatsapp } from 'react-icons/bs';
 import './ContactComponent.scss';
-import useScrollReveal from '../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../hooks/useRevealHooks';
 
 const ContactComponent = () => {
 	useEffect(() => {

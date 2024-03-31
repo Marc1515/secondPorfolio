@@ -6,7 +6,7 @@ import {
 	faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import './AboutComponent.scss';
-import useScrollReveal from '../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../hooks/useRevealHooks';
 
 const AboutComponent = () => {
 	useEffect(() => {

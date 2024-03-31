@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 import TechImages from './TechnologiesData';
 import './TechnologiesComponent.scss';
-import useScrollReveal from '../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../hooks/useRevealHooks';
 
 const TechnologiesComponent = () => {
 	const [openSection, setOpenSection] = useState(null);

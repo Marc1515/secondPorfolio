@@ -7,7 +7,7 @@ import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
 
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import useScrollReveal from '../../hooks/useScrollReveal.js';
+import { useScrollReveal } from '../../hooks/useRevealHooks.js';
 
 const ProjectsComponent = () => {
 	const [currentPage, setCurrentPage] = useState(1);
