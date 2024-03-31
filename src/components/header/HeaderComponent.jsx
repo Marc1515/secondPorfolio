@@ -3,12 +3,14 @@ import { MenuContext } from '../../context/MenuContext';
 import BurguerButtonComponent from './BurguerButton/BurguerButtonComponent';
 import NavbarComponent from './Navbar/NavbarComponent';
 import './HeaderComponent.scss';
+import { useInitReveal } from '../../hooks/useRevealHooks';
 
 function HeaderComponent() {
 	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	const { toggleMenu, navbarOpen } = useContext(MenuContext);
 
 	useEffect(() => {
+		useInitReveal('.burguerButton, .header');
 		const handleResize = () => setWindowWidth(window.innerWidth);
 		window.addEventListener('resize', handleResize);
 
